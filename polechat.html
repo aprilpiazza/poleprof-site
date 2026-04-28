@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGS7B382M1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BGS7B382M1');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PoleChat — Answering All Your PoleFit Q's | Pole Proficiency</title>
+  <meta name="description" content="PoleChat by April at Pole Proficiency Aerial Fitness. Tips, myth-busting, guides, and support for pole fitness beginners and beyond." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* PoleChat-specific styles */
+    .polechat-hero {
+      padding: 10rem 0 5rem;
+      background: linear-gradient(160deg, #0d2a36 0%, #1a4a5a 100%);
+      text-align: center;
+      color: white;
+    }
+    .polechat-hero h1 { color: white; font-size: clamp(3rem, 7vw, 5rem); margin-bottom: 0.5rem; }
+    .polechat-hero p { color: rgba(255,255,255,0.75); font-size: 1.15rem; }
+
+    .polechat-body { padding: 5rem 0; background: var(--off-white); }
+
+    .post-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* POST CARD */
+    .post-card {
+      background: white;
+      border-radius: var(--radius);
+      border: 1.5px solid var(--border);
+      overflow: hidden;
+      margin-bottom: 2rem;
+      transition: var(--transition);
+    }
+    .post-card:hover { box-shadow: var(--shadow); }
+    .post-card-img {
+      width: 100%; aspect-ratio: 16/7;
+      object-fit: cover; object-position: center;
+      display: block;
+    }
+    .post-card-body { padding: 2.5rem; }
+    .post-meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+    .post-tag {
+      background: var(--sky-light); color: var(--teal-dark);
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 0.25rem 0.9rem;
+      border-radius: 50px; border: 1px solid var(--border);
+    }
+    .post-date { font-size: 0.82rem; color: var(--muted); }
+    .post-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700; color: var(--ink);
+      margin-bottom: 0.5rem; line-height: 1.2;
+    }
+    .post-excerpt { font-size: 1rem; color: var(--muted); margin-bottom: 1.5rem; }
+    .post-content { font-size: 0.97rem; color: #4a5a60; line-height: 1.85; }
+    .post-content p { margin-bottom: 1.2rem; color: #4a5a60; }
+    .post-content p:last-child { margin-bottom: 0; }
+    .post-signature {
+      margin-top: 2rem; padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-style: italic; color: var(--teal-dark);
+      font-family: var(--font-display); font-size: 1.1rem;
+    }
+
+    /* SIDEBAR */
+    .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+    .sidebar-card {
+      background: white;
+      border-radius: var(--radius);
+      border: 1.5px solid var(--border);
+      padding: 1.75rem;
+    }
+    .sidebar-card h4 {
+      font-family: var(--font-display);
+      font-size: 1.2rem; color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .sidebar-card p { font-size: 0.88rem; margin-bottom: 1rem; }
+    .coming-soon-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+    .coming-soon-list li {
+      font-size: 0.88rem; color: var(--muted);
+      padding: 0.5rem 0.75rem;
+      background: var(--sky-pale);
+      border-radius: 8px;
+      border-left: 3px solid var(--teal-light);
+    }
+    .sidebar-book {
+      background: linear-gradient(145deg, var(--teal-dark), var(--slate));
+      color: white; text-align: center;
+    }
+    .sidebar-book h4 { color: white; }
+    .sidebar-book p { color: rgba(255,255,255,0.75); }
+
+    @media (max-width: 768px) {
+      .post-grid { grid-template-columns: 1fr; }
+      .sidebar { order: -1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Pole Proficiency Aerial Fitness" />
+        <div class="logo-text">
+          <span class="logo-main">Pole Proficiency</span>
+          <span class="logo-sub">Aerial Fitness</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Classes</a></li>
+        <li><a href="index.html#events">Events</a></li>
+        <li><a href="index.html#bachelorette">Parties</a></li>
+        <li><a href="polechat.html" style="color:var(--teal-light)">PoleChat</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="polechat-hero">
+    <div class="container">
+      <p class="eyebrow light center">By April · The Pole Professor</p>
+      <h1>PoleChat 💬</h1>
+      <p>Answering all your PoleFit Q's — tips, myth-busting, guides, and support for every level.</p>
+    </div>
+  </div>
+
+  <!-- BLOG BODY -->
+  <div class="polechat-body">
+    <div class="container">
+      <div class="post-grid">
+
+        <!-- POSTS -->
+        <main>
+
+          <!-- POST 1 -->
+          <article class="post-card">
+            <img src="https://img1.wsimg.com/isteam/ip/0457cbf4-c412-42d5-ace6-b2ef448a9874/643235F5-0939-4227-B516-C9DA307A2EBA.JPG" alt="Who is Pole Fitness For?" class="post-card-img" />
+            <div class="post-card-body">
+              <div class="post-meta">
+                <span class="post-tag">Beginner Friendly</span>
+                <span class="post-date">March 9, 2026</span>
+              </div>
+              <h2 class="post-title">Who is Pole Fitness For?! Break the Myths &amp; Start Your Journey.</h2>
+              <div class="post-content">
+                <p>Despite what you might think or may have heard, the short answer is: <strong>Pole fitness is for YOU!</strong></p>
+                <p>Pole fitness (also called pole dance, pole dancing, or simply...pole) is an inclusive practice enjoyed by many age groups, genders, and people all over the world. Pole was popularized as a mainstream sport and fitness practice in Australia in the late aughts and began to catch on in the States around 2012. Since then, it has gained popularity across the US, shedding stigma with each passing year.</p>
+                <p>Inherently, pole has some elements that lead to common myths. It is generally necessary to bare some skin for the sake of physics — you cannot stick to the pole otherwise! This has led to the idea that pole is for the young only, or that it is overtly sexual. The truth is that there are many different styles of pole fitness (we'll cover this topic in another post soon!). Similar to yoga or other forms of dance, your practice is what you make it — sensual, playful, sporty, whimsical, etc. All in all, pole is a dazzling blend of athleticism and artistry that challenges each individual's strength, balance, and flexibility — no matter their age!</p>
+                <p>Speaking of strength, balance, and flexibility: another myth is that pole is only for those with athletic experience or those who are currently physically fit, and that couldn't be further from the truth. Most polers start in exactly the same way and their bodies adapt to the sport with time and consistent practice. Strength, balance, and flexibility are ALL things you can train!</p>
+                <p>While there are more myths to bust, this is a good place to start. In addition to being a great workout, pole fitness is also a fantastic creative — and even therapeutic! — outlet to express individuality and artistry. Not only that, but pole is FUN and an excellent way to be part of a community that offers encouragement, support, and opportunities to build friendships that can be hard to find in adulthood. So come be part of ours! Take that first step to feeling healthier, happier, and more confident. Book your first small group session, private lesson, or private party with your friends today! Find out for yourself what all the excitement is about.</p>
+                <p class="post-signature">I can't wait to meet you,<br>Pole Prof xx</p>
+              </div>
+            </div>
+          </article>
+
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+          <div class="sidebar-card sidebar-book">
+            <h4>Ready to Try It?</h4>
+            <p>First private lesson is <strong>50% off</strong> — just mention it when you book.</p>
+            <a href="index.html#contact" class="btn btn-light" style="margin-top:0.5rem">Book Now →</a>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>Coming Soon to PoleChat</h4>
+            <ul class="coming-soon-list">
+              <li>🎯 The Different Styles of Pole</li>
+              <li>💪 Building Strength for Pole Beginners</li>
+              <li>🩱 What to Wear to Your First Class</li>
+              <li>🤔 Is Pole Right for Me?</li>
+              <li>⭐ Student Spotlights</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>Follow Along</h4>
+            <p>Get tips, behind-the-scenes content, and inspiration on Instagram.</p>
+            <a href="https://www.instagram.com/pole_prof/" target="_blank" rel="noopener" class="btn btn-outline" style="width:100%;text-align:center;margin-top:0.25rem">@pole_prof →</a>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo-wrap">
+        <img src="logo.png" alt="Pole Proficiency" />
+        <div class="footer-logo">Pole Proficiency Aerial Fitness</div>
+      </div>
+      <p class="footer-tag">Foundation to Flight · Central Florida</p>
+      <div class="footer-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Classes</a>
+        <a href="index.html#bachelorette">Parties</a>
+        <a href="https://www.instagram.com/pole_prof/" target="_blank">Instagram</a>
+        <a href="polechat.html">PoleChat</a>
+        <a href="index.html#contact">Book Now</a>
+      </div>
+      <p class="footer-copy">© 2026 Pole Proficiency Aerial Fitness. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+
+</body>
+</html>

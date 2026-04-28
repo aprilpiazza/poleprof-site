@@ -1,0 +1,38 @@
+plugins = []
+headers = []
+[[redirects]]
+from = "/onclouddnine"
+to = "/oncloudnine"
+status = 301
+force = true
+
+[[redirects]]
+from = "/onclouddnine.html"
+to = "/oncloudnine"
+status = 301
+force = true
+
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/theclawww/.openclaw/workspace/poleprof-site"
+publishOrigin = "default"
+base = "/Users/theclawww/.openclaw/workspace/poleprof-site"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
