@@ -3,16 +3,316 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting to On Cloud Nine…</title>
-  <meta http-equiv="refresh" content="0; url=/oncloudnine/" />
-  <link rel="canonical" href="https://poleprof.com/oncloudnine/" />
-  <script>window.location.replace('/oncloudnine/');</script>
+  <title>On Cloud Nine Shop | Pole Proficiency</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGS7B382M1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BGS7B382M1', {
+      page_title: 'On Cloud Nine Shop',
+      page_path: '/oncloudnine'
+    });
+  </script>
+  <meta name="description" content="Just in time for May 10th — shop the Pole Mom crewneck gallery and join the newsletter for the next On Cloud Nine drop." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f7fbff; color: #17313d; }
-    a { color: #2e7d8c; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f7fbff;
+      --card: #ffffff;
+      --ink: #17313d;
+      --muted: #5c7785;
+      --line: #dbe8ef;
+      --accent: #7db8d2;
+      --accent-dark: #2e7d8c;
+      --font-display: 'Cormorant Garamond', serif;
+      --font-body: 'DM Sans', sans-serif;
+      --radius: 18px;
+    }
+    body {
+      font-family: var(--font-body);
+      background: linear-gradient(180deg, #eaf5fb 0%, var(--bg) 35%, #ffffff 100%);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+    nav {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(247,251,255,0.9);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto; padding: 0.7rem 1.5rem;
+      display: flex; justify-content: center; align-items: center;
+      position: relative;
+    }
+    .brand-logo {
+      max-width: 620px; width: 100%; display: block; margin: 0 auto;
+      mix-blend-mode: multiply;
+      opacity: 0.82;
+      filter: saturate(0.88) brightness(1.02) drop-shadow(0 4px 12px rgba(23,49,61,0.04));
+    }
+    .back { color: var(--muted); text-decoration: none; font-size: 0.88rem; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); }
+    .hero { padding: 1.2rem 0 1rem; text-align: center; }
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1; margin-bottom: 0.8rem;
+    }
+    .lead {
+      max-width: 700px; margin: 0 auto; font-size: 1.02rem; color: var(--muted);
+    }
+    .product { padding: 1rem 0 4rem; }
+    .product-grid {
+      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2rem; align-items: start;
+    }
+    .gallery-card, .details-card {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(23,49,61,0.05);
+    }
+    .gallery-card { padding: 1rem; }
+    .hero-image { width: 100%; border-radius: 14px; display: block; }
+    .gallery-stack {
+      display: grid;
+      gap: 1rem;
+    }
+    .gallery-stack figure {
+      margin: 0;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+    .gallery-stack img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      display: block;
+    }
+    .details-card { padding: 2rem; }
+    .details-card h2 {
+      font-family: var(--font-display); font-size: 2.3rem; line-height: 1.05; margin-bottom: 0.75rem; text-align: center;
+    }
+    .details-card p { color: var(--muted); margin-bottom: 1rem; }
+    .note, .status-box, .newsletter-wrap {
+      background: #f2f9fc; border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.1rem;
+    }
+    .note { margin: 1.25rem 0 1.2rem; }
+    .status-box { margin: 1.25rem 0 1rem; }
+    .newsletter-wrap { margin-top: 1rem; }
+    .status-box strong, .note strong { color: var(--ink); }
+    .detail-list {
+      list-style: none; display: grid; gap: 0.85rem; margin: 1.4rem 0 1.5rem;
+    }
+    .detail-list li {
+      padding: 0.9rem 1rem; border-radius: 14px; background: #fbfdff; border: 1px solid var(--line);
+      color: var(--ink);
+    }
+    .newsletter-wrap h3 {
+      font-family: var(--font-display); font-size: 1.55rem; margin-bottom: 0.45rem; text-align: center;
+    }
+    .newsletter-wrap p.small {
+      font-size: 0.88rem; color: var(--muted); text-align: center; margin-top: 0.75rem;
+    }
+    .waitlist-form {
+      display: grid; gap: 0.85rem; margin-top: 1rem;
+    }
+    .waitlist-form input {
+      width: 100%;
+      padding: 0.95rem 1.05rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--line);
+      background: white;
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 0.96rem;
+      outline: none;
+    }
+    .waitlist-form input:focus {
+      border-color: var(--accent-dark);
+      box-shadow: 0 0 0 4px rgba(46,125,140,0.08);
+    }
+    .cta {
+      display: inline-block; width: 100%; text-align: center; text-decoration: none;
+      background: var(--accent-dark); color: white; font-weight: 700;
+      padding: 1rem 1.25rem; border-radius: 999px; border: none; cursor: pointer;
+    }
+    .cta:hover { filter: brightness(0.98); }
+    .pay-link-slot {
+      margin: 1rem 0 1.15rem;
+      padding: 1rem 1.1rem;
+      border-radius: 14px;
+      border: 1px dashed var(--accent-dark);
+      background: #f7fcfe;
+      text-align: center;
+    }
+    .pay-link-slot strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 0.35rem;
+    }
+    .pay-link-slot p {
+      margin: 0;
+      font-size: 0.94rem;
+    }
+    .waitlist-message {
+      min-height: 1.4rem;
+      margin-top: 0.85rem;
+      text-align: center;
+      color: var(--accent-dark);
+      font-size: 0.92rem;
+      font-weight: 500;
+    }
+    .subcta {
+      margin-top: 0.9rem; font-size: 0.92rem; color: var(--muted); text-align: center;
+    }
+    .size-chart {
+      margin-top: 2rem;
+      grid-column: 1 / -1;
+    }
+    .size-chart h3 {
+      font-family: var(--font-display); font-size: 1.45rem; margin-bottom: 0.75rem;
+    }
+    .size-chart img {
+      width: 100%; display: block; border-radius: 14px; border: 1px solid var(--line); background: #fff;
+      max-width: 920px; margin: 0 auto;
+    }
+    @media (max-width: 860px) {
+      .product-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .hero { padding-top: 3.5rem; }
+      .nav-inner { justify-content: center; padding: 0.75rem 1rem 0.9rem; }
+      .brand-logo { max-width: 360px; }
+      .back { position: static; transform: none; display: block; margin-top: 0.5rem; text-align: center; }
+      .details-card { padding: 1.35rem; }
+      .details-card h2 { font-size: 1.9rem; }
+    }
   </style>
 </head>
 <body>
-  <p>Redirecting to <a href="/oncloudnine/">On Cloud Nine</a>…</p>
+  <nav>
+    <div class="nav-inner">
+      <img class="brand-logo" src="on-cloud-nine-logo.png" alt="On Cloud Nine" />
+      <a class="back" href="index.html">← Back to Pole Proficiency</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Just in Time for May 10th</h1>
+      <p class="lead">Like a normal mom, but even cooler. Are you a mom who poles, or is she the mom who taught you to pole? Either way, this lightweight sweatshirt feels like a warm hug...and it always feels good to give one or get one.</p>
+    </div>
+  </section>
+
+  <section class="product">
+    <div class="container">
+      <div class="product-grid">
+        <div class="gallery-card">
+          <div class="gallery-stack">
+            <figure>
+              <img class="hero-image" src="pole-mom-1.png" alt="White and pink Pole Mom crewnecks laid out together" />
+            </figure>
+            <figure>
+              <img class="hero-image" src="pole-mom-2.jpg" alt="White Pole Mom crewneck laid flat" />
+            </figure>
+            <figure>
+              <img class="hero-image" src="pole-mom-3.png" alt="Model holding a pink Pole Mom crewneck" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="details-card">
+          <h2>Pole Mom Crewneck Sweatshirt</h2>
+          <p>This lightweight crewneck is soft, giftable, and easy to love. The presale messaging for the previous poker item stays closed, but this page now leads with a Mother's Day-ready spotlight for the Pole Mom design.</p>
+
+          <div class="note">
+            <strong>Pricing:</strong> $43 with credit card, or $40 via email and using the app.
+          </div>
+
+          <ul class="detail-list">
+            <li><strong>Available sizes:</strong> Select sizes in stock</li>
+            <li><strong>Need it by Sunday the 10th?</strong> Ask for rush order.</li>
+            <li><strong>Available colors:</strong> White and Baby Pink</li>
+            <li><strong>Print detail:</strong> 3D puff print</li>
+            <li><strong>Customization:</strong> Add the year you started poling</li>
+          </ul>
+
+          <div class="status-box">
+            <strong>The pre-sale for the poker item is still closed.</strong><br />
+            Please check back in for the next drop.
+          </div>
+
+          <div class="pay-link-slot" id="pay-link-slot">
+            <strong>Pay link goes here</strong>
+            <p>Drop in the payment link here when you're ready, just like last time.</p>
+          </div>
+
+          <div class="newsletter-wrap">
+            <h3>Sign Up for the Newsletter</h3>
+            <p>Fill out the form below to subscribe and be the first to know when the next design drop goes live.</p>
+            <form id="waitlistForm" class="waitlist-form" action="https://formspree.io/f/april.piazza@gmail.com" method="POST">
+              <input type="hidden" name="subject" value="On Cloud Nine Newsletter Signup" />
+              <input type="email" name="email" placeholder="your@email.com" required />
+              <button type="submit" class="cta">Subscribe ☁️</button>
+            </form>
+            <p id="waitlistMessage" class="waitlist-message" aria-live="polite"></p>
+            <p class="small">For new design drop updates, follow <a href="https://www.instagram.com/pole_prof/" target="_blank" rel="noopener">@pole_prof on Instagram</a> or join the newsletter.</p>
+          </div>
+
+          <p class="subcta">The ability to purchase this item has been removed until the next drop opens.</p>
+        </div>
+
+        <div class="size-chart">
+          <h3>Size Chart</h3>
+          <img src="store-size-chart.png" alt="Gildan 18000 size guide for crew-neck sweatshirt" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const waitlistForm = document.getElementById('waitlistForm');
+    const waitlistMessage = document.getElementById('waitlistMessage');
+
+    if (waitlistForm && waitlistMessage) {
+      waitlistForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const button = waitlistForm.querySelector('button[type="submit"]');
+        const originalText = button.textContent;
+        button.disabled = true;
+        button.textContent = 'Subscribing...';
+        waitlistMessage.textContent = '';
+
+        try {
+          const response = await fetch(waitlistForm.action, {
+            method: 'POST',
+            body: new FormData(waitlistForm),
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (!response.ok) throw new Error('Signup failed');
+
+          waitlistForm.reset();
+          waitlistMessage.textContent = 'Thank you! You’re on the newsletter list and will hear about the next design drop.';
+          if (typeof gtag === 'function') {
+            gtag('event', 'newsletter_signup', {
+              event_category: 'shop',
+              event_label: 'On Cloud Nine Newsletter Signup'
+            });
+          }
+        } catch (err) {
+          waitlistMessage.textContent = 'Something went wrong. Please try again or DM April on Instagram.';
+        } finally {
+          button.disabled = false;
+          button.textContent = originalText;
+        }
+      });
+    }
+  </script>
 </body>
 </html>
