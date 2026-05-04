@@ -14,7 +14,7 @@
       page_path: '/oncloudnine'
     });
   </script>
-  <meta name="description" content="The Authentically Yours crewneck pre-sale has ended. Join the newsletter for the next On Cloud Nine drop." />
+  <meta name="description" content="Just in time for May 10th — shop the Pole Mom crewneck gallery and join the newsletter for the next On Cloud Nine drop." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -76,6 +76,23 @@
     }
     .gallery-card { padding: 1rem; }
     .hero-image { width: 100%; border-radius: 14px; display: block; }
+    .gallery-stack {
+      display: grid;
+      gap: 1rem;
+    }
+    .gallery-stack figure {
+      margin: 0;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+    .gallery-stack img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      display: block;
+    }
     .details-card { padding: 2rem; }
     .details-card h2 {
       font-family: var(--font-display); font-size: 2.3rem; line-height: 1.05; margin-bottom: 0.75rem; text-align: center;
@@ -125,6 +142,23 @@
       padding: 1rem 1.25rem; border-radius: 999px; border: none; cursor: pointer;
     }
     .cta:hover { filter: brightness(0.98); }
+    .pay-link-slot {
+      margin: 1rem 0 1.15rem;
+      padding: 1rem 1.1rem;
+      border-radius: 14px;
+      border: 1px dashed var(--accent-dark);
+      background: #f7fcfe;
+      text-align: center;
+    }
+    .pay-link-slot strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 0.35rem;
+    }
+    .pay-link-slot p {
+      margin: 0;
+      font-size: 0.94rem;
+    }
     .waitlist-message {
       min-height: 1.4rem;
       margin-top: 0.85rem;
@@ -170,8 +204,8 @@
 
   <section class="hero">
     <div class="container">
-      <h1>Pre-Sale Closed</h1>
-      <p class="lead">The Authentically Yours crewneck pre-sale has ended. Check back in for the next drop.</p>
+      <h1>Just in Time for May 10th</h1>
+      <p class="lead">Like a normal mom, but even cooler. Are you a mom who poles, or is she the mom who taught you to pole? Either way, this lightweight sweatshirt feels like a warm hug...and it always feels good to give one or get one.</p>
     </div>
   </section>
 
@@ -179,25 +213,43 @@
     <div class="container">
       <div class="product-grid">
         <div class="gallery-card">
-          <img class="hero-image" src="../store-poler-grid.jpg" alt="Poler sweatshirt color options collage" />
+          <div class="gallery-stack">
+            <figure>
+              <img class="hero-image" src="../pole-mom-1.png" alt="White and pink Pole Mom crewnecks laid out together" />
+            </figure>
+            <figure>
+              <img class="hero-image" src="../pole-mom-2.jpg" alt="White Pole Mom crewneck laid flat" />
+            </figure>
+            <figure>
+              <img class="hero-image" src="../pole-mom-3.png" alt="Model holding a pink Pole Mom crewneck" />
+            </figure>
+          </div>
         </div>
 
         <div class="details-card">
-          <h2>Authentically Yours Crewneck Sweatshirt</h2>
-          <p>This comfy cotton blend crewneck features puff-print lettering made to stand out, just like you. This drop is now closed, but you can join the newsletter to hear about the next release first.</p>
+          <h2>Pole Mom Crewneck Sweatshirt</h2>
+          <p>This lightweight crewneck is soft, giftable, and easy to love. The presale messaging for the previous poker item stays closed, but this page now leads with a Mother's Day-ready spotlight for the Pole Mom design.</p>
 
           <div class="note">
-            <strong>Available sizes:</strong> Small through Extra Large
+            <strong>Pricing:</strong> $43 with credit card, or $40 via email and using the app.
           </div>
 
           <ul class="detail-list">
-            <li><strong>Available colors:</strong> White, Sand, Black, Pink</li>
+            <li><strong>Available sizes:</strong> Select sizes in stock</li>
+            <li><strong>Need it by Sunday the 10th?</strong> Ask for rush order.</li>
+            <li><strong>Available colors:</strong> White and Baby Pink</li>
+            <li><strong>Print detail:</strong> 3D puff print</li>
             <li><strong>Customization:</strong> Add the year you started poling</li>
           </ul>
 
           <div class="status-box">
-            <strong>The pre-sale for the Authentically Yours crewneck has ended.</strong><br />
+            <strong>The pre-sale for the poker item is still closed.</strong><br />
             Please check back in for the next drop.
+          </div>
+
+          <div class="pay-link-slot" id="pay-link-slot">
+            <strong>Pay link goes here</strong>
+            <p>Drop in the payment link here when you're ready, just like last time.</p>
           </div>
 
           <div class="newsletter-wrap">
