@@ -3,18 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>On Cloud Nine Shop | Pole Proficiency</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGS7B382M1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-BGS7B382M1', {
-      page_title: 'On Cloud Nine Shop',
-      page_path: '/oncloudnine'
-    });
-  </script>
-  <meta name="description" content="Explore the On Cloud Nine studio pre-sale collection including the Pole Mom crewneck, POLER crewneck, and studio tees." />
+  <title>On Cloud Nine Shop | Temporarily Paused</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="description" content="The On Cloud Nine shop is temporarily paused while the collection page is being refreshed." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -22,127 +13,52 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --bg: #f7fbff; --card: #fff; --ink: #17313d; --muted: #5c7785; --line: #dbe8ef;
-      --accent: #7db8d2; --accent-dark: #2e7d8c; --font-display: 'Cormorant Garamond', serif; --font-body: 'DM Sans', sans-serif; --radius: 18px;
+      --accent-dark: #2e7d8c; --font-display: 'Cormorant Garamond', serif; --font-body: 'DM Sans', sans-serif; --radius: 18px;
     }
-    body { font-family: var(--font-body); background: linear-gradient(180deg,#eaf5fb 0%,var(--bg) 35%,#fff 100%); color: var(--ink); line-height: 1.6; }
-    .container { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
-    nav { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(12px); background: rgba(247,251,255,0.9); border-bottom: 1px solid var(--line); }
-    .nav-inner { max-width: 1120px; margin: 0 auto; padding: 0.7rem 1.5rem; display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); align-items: center; column-gap: 1rem; }
-    .brand-logo { grid-column: 2; max-width: 410px; width: 100%; display: block; margin: 0 auto; mix-blend-mode: multiply; opacity: .82; filter: saturate(.88) brightness(1.02) drop-shadow(0 4px 12px rgba(23,49,61,.04)); }
-    .back { color: var(--muted); text-decoration: none; font-size: .88rem; grid-column: 3; justify-self: end; }
-    .hero { padding: 1.2rem 0 1rem; text-align: center; }
-    h1 { font-family: var(--font-display); font-size: clamp(2rem,4vw,3rem); line-height: 1; margin-bottom: .8rem; }
-    .lead { max-width: 720px; margin: 0 auto; font-size: 1.02rem; color: var(--muted); }
-    .shop-cta { max-width: 360px; margin: 0 auto 1rem; display: block; }
-    .product { padding: 1rem 0 4rem; }
-    .collection-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
-    .collection-card, .customer-love, .size-chart { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 10px 30px rgba(23,49,61,.05); overflow: hidden; }
-    .collection-card { display: flex; flex-direction: column; }
-    .collection-card img { width: 100%; display: block; aspect-ratio: 4/5; object-fit: cover; background: #fff; border-bottom: 1px solid var(--line); }
-    .collection-copy { padding: 1rem; display: flex; flex-direction: column; gap: .65rem; height: 100%; }
-    .collection-eyebrow { color: var(--accent-dark); font-size: .8rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
-    .collection-copy h3, .customer-love h3, .size-chart h3 { font-family: var(--font-display); line-height: 1; }
-    .collection-copy h3 { font-size: 1.7rem; }
-    .collection-copy p, .customer-love p { color: var(--muted); }
-    .collection-list { list-style: none; display: grid; gap: .5rem; margin-top: .2rem; }
-    .collection-list li { padding: .7rem .8rem; border-radius: 12px; background: #fbfdff; border: 1px solid var(--line); color: var(--ink); font-size: .92rem; }
-    .collection-actions { margin-top: auto; display: grid; gap: .7rem; }
-    .cta { display: inline-block; width: 100%; text-align: center; text-decoration: none; background: var(--accent-dark); color: white; font-weight: 700; padding: 1rem 1.25rem; border-radius: 999px; border: none; cursor: pointer; }
-    .customer-love, .size-chart { margin-top: 1rem; padding: 1rem; }
-    .customer-love h3, .size-chart h3 { font-size: 1.7rem; text-align: center; margin-bottom: .5rem; }
-    .customer-love p { text-align: center; max-width: 720px; margin: 0 auto 1rem; }
-    .customer-love img { width: 100%; max-width: 920px; display: block; margin: 0 auto 1rem; border-radius: 14px; border: 1px solid var(--line); }
-    .note { background: #f2f9fc; border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.1rem; max-width: 720px; margin: 0 auto; text-align: center; }
-    .size-chart img { width: 100%; max-width: 460px; display: block; margin: 0 auto; border-radius: 14px; border: 1px solid var(--line); }
-    @media (max-width: 980px) { .collection-grid { grid-template-columns: 1fr; } }
-    @media (max-width: 560px) {
-      .hero { padding-top: 3.5rem; }
-      .nav-inner { grid-template-columns: 1fr; justify-items: center; padding: .75rem 1rem .9rem; }
-      .brand-logo { grid-column: 1; max-width: 240px; }
-      .back { grid-column: 1; justify-self: center; display: block; margin-top: .5rem; text-align: center; }
+    body {
+      font-family: var(--font-body);
+      background: linear-gradient(180deg,#eaf5fb 0%,var(--bg) 35%,#fff 100%);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
+    .container { max-width: 880px; margin: 0 auto; padding: 0 1.5rem; }
+    nav { padding: 1.25rem 0 0; }
+    .brand-logo { max-width: 410px; width: 100%; display: block; margin: 0 auto; mix-blend-mode: multiply; opacity: .82; }
+    main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 2rem 0 4rem; }
+    .card {
+      width: 100%; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(23,49,61,.05); padding: 2.2rem 2rem; text-align: center;
+    }
+    h1 { font-family: var(--font-display); font-size: clamp(2.2rem,4vw,3.4rem); line-height: 1; margin-bottom: 1rem; }
+    p { color: var(--muted); max-width: 620px; margin: 0 auto 1rem; }
+    .actions { display: grid; gap: .85rem; max-width: 360px; margin: 1.5rem auto 0; }
+    .btn {
+      display: inline-block; width: 100%; text-align: center; text-decoration: none;
+      background: var(--accent-dark); color: white; font-weight: 700; padding: 1rem 1.25rem; border-radius: 999px;
+    }
+    .btn.secondary { background: white; color: var(--ink); border: 1px solid var(--line); }
   </style>
 </head>
 <body>
   <nav>
-    <div class="nav-inner">
+    <div class="container">
       <img class="brand-logo" src="../on-cloud-nine-logo.png" alt="On Cloud Nine" />
-      <a class="back" href="../index.html">← Back to Pole Proficiency</a>
     </div>
   </nav>
-
-  <section class="hero">
+  <main>
     <div class="container">
-      <h1>Studio Pre-Sale Collection</h1>
-      <p class="lead">A limited collection from On Cloud Nine.</p>
-    </div>
-  </section>
-
-  <section class="product">
-    <div class="container">
-      
-      <div class="collection-grid" style="align-items:start;">
-        <article class="collection-card">
-          <img src="../shop-tile-pole-mom.png" alt="Professional Pole Mom crewneck presentation in white and baby pink" />
-          <div class="collection-copy">
-            <h3>Pole Mom Crewneck</h3>
-            
-            <ul class="collection-list">
-              <li><strong>Colors:</strong> White and baby pink</li>
-              <li><strong>Finish:</strong> 3D puff print</li>
-              <li><strong>Price:</strong> $43 card / $40 Venmo or CashApp</li>
-            </ul>
-            <div class="collection-actions">
-              <a class="cta" href="https://pay.poleprof.com/pole-mom-crew" target="_blank" rel="noopener">Buy the Pole Mom Crewneck</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="collection-card">
-          <img src="../shop-tile-poler.png" alt="POLER crewneck in pink, sand, cream, and black" />
-          <div class="collection-copy">
-            <h3>POLER Crewneck</h3>
-            
-            <ul class="collection-list">
-              <li><strong>Colors:</strong> Pink, sand, cream, and black</li>
-              <li><strong>Lettering:</strong> Bold varsity print</li>
-            </ul>
-            <div class="collection-actions">
-              <a class="cta" href="../index.html#contact">Ask About POLER Pre-Sales</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="collection-card">
-          <img src="../shop-tile-tees.png" alt="Pole Mom and Pole Mama tees shown in a polished product board" />
-          <div class="collection-copy">
-            <h3>Pole Mom + Pole Mama Tees</h3>
-            
-            <ul class="collection-list">
-              <li><strong>Designs:</strong> Pole Mom and Pole Mama</li>
-            </ul>
-            <div class="collection-actions">
-              <a class="cta" href="../index.html#contact">Ask About Tee Pre-Sales</a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="customer-love">
-        <h3>Customer Love</h3>
-        <img src="../customer-love-board.png" alt="Customer photos wearing and sharing Pole Prof merch" />
-        <div class="note">
-          <strong>Already wearing yours?</strong>
-          <p style="margin:0.55rem 0 0.85rem;">Send your review, photo, and Instagram handle through the contact form for a chance to be featured in Customer Love.</p>
-          <a class="cta" href="../index.html#contact">Share Your Photo &amp; Review</a>
+      <div class="card">
+        <h1>Shop Temporarily Paused</h1>
+        <p>The On Cloud Nine shop is temporarily paused while the collection page is being refreshed.</p>
+        <p>Thank you for your patience. For questions about current pieces or upcoming drops, reach out below.</p>
+        <div class="actions">
+          <a class="btn" href="../index.html#contact">Contact April</a>
+          <a class="btn secondary" href="https://www.instagram.com/pole_prof/" target="_blank" rel="noopener">Follow @pole_prof</a>
         </div>
       </div>
-
-      <div class="size-chart">
-        <h3>Size Chart</h3>
-        <img src="../store-size-chart.png" alt="Gildan 18000 size guide for crew-neck sweatshirt" />
-      </div>
     </div>
-  </section>
+  </main>
 </body>
 </html>
