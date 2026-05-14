@@ -14,7 +14,7 @@
       page_path: '/oncloudnine'
     });
   </script>
-  <meta name="description" content="Shop the Pole Mom crewneck, see real customer photos, and grab your favorite color while select sizes are still available." />
+  <meta name="description" content="Explore Pole Prof studio pre-sale apparel including the Pole Mom crewneck, POLER crewneck, and studio tees — plus customer photos and pre-sale options for studios." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -64,166 +64,78 @@
       font-size: clamp(2rem, 4vw, 3rem);
       line-height: 1; margin-bottom: 0.8rem;
     }
-    .lead {
-      max-width: 700px; margin: 0 auto; font-size: 1.02rem; color: var(--muted);
+    .lead { max-width: 760px; margin: 0 auto; font-size: 1.02rem; color: var(--muted); }
+    .hero-kicker {
+      display: inline-block; margin-bottom: 0.8rem; padding: 0.4rem 0.85rem; border-radius: 999px;
+      background: #edf7fb; color: var(--accent-dark); font-size: 0.82rem; font-weight: 700;
+      letter-spacing: 0.04em; text-transform: uppercase;
     }
     .product { padding: 1rem 0 4rem; }
-    .product-grid {
-      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2rem; align-items: start;
-    }
-    .gallery-card, .details-card {
+    .product-grid { display: grid; gap: 1.5rem; }
+    .preorder-banner, .studio-card, .newsletter-wrap, .customer-love, .size-chart {
       background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
       box-shadow: 0 10px 30px rgba(23,49,61,0.05);
     }
-    .gallery-card { padding: 1rem; }
-    .hero-image { width: 100%; border-radius: 14px; display: block; }
-    .gallery-stack {
-      display: grid;
-      gap: 1rem;
-    }
-    .gallery-stack figure {
-      margin: 0;
-      border-radius: 14px;
-      overflow: hidden;
-      background: #fff;
-      border: 1px solid var(--line);
-    }
-    .gallery-stack img {
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      display: block;
-    }
-    .details-card { padding: 2rem; }
-    .details-card h2 {
-      font-family: var(--font-display); font-size: 2.3rem; line-height: 1.05; margin-bottom: 0.75rem; text-align: center;
-    }
-    .details-card p { color: var(--muted); margin-bottom: 1rem; }
-    .note, .status-box, .newsletter-wrap {
-      background: #f2f9fc; border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.1rem;
-    }
-    .note { margin: 1.25rem 0 1.2rem; }
-    .status-box { margin: 1.25rem 0 1rem; }
-    .newsletter-wrap { margin-top: 1rem; }
-    .status-box strong, .note strong { color: var(--ink); }
-    .detail-list {
-      list-style: none; display: grid; gap: 0.85rem; margin: 1.4rem 0 1.5rem;
-    }
-    .detail-list li {
-      padding: 0.9rem 1rem; border-radius: 14px; background: #fbfdff; border: 1px solid var(--line);
-      color: var(--ink);
-    }
-    .newsletter-wrap h3 {
-      font-family: var(--font-display); font-size: 1.55rem; margin-bottom: 0.45rem; text-align: center;
-    }
-    .newsletter-wrap p.small {
-      font-size: 0.88rem; color: var(--muted); text-align: center; margin-top: 0.75rem;
-    }
-    .waitlist-form {
-      display: grid; gap: 0.85rem; margin-top: 1rem;
-    }
-    .waitlist-form input {
-      width: 100%;
-      padding: 0.95rem 1.05rem;
-      border-radius: 999px;
-      border: 1.5px solid var(--line);
-      background: white;
-      color: var(--ink);
-      font-family: var(--font-body);
-      font-size: 0.96rem;
-      outline: none;
-    }
-    .waitlist-form input:focus {
-      border-color: var(--accent-dark);
-      box-shadow: 0 0 0 4px rgba(46,125,140,0.08);
-    }
-    .cta {
-      display: inline-block; width: 100%; text-align: center; text-decoration: none;
-      background: var(--accent-dark); color: white; font-weight: 700;
-      padding: 1rem 1.25rem; border-radius: 999px; border: none; cursor: pointer;
-    }
-    .cta:hover { filter: brightness(0.98); }
-    .pay-link-slot {
-      margin: 1rem 0 1.15rem;
-      padding: 1rem 1.1rem;
-      border-radius: 14px;
-      border: 1px dashed var(--accent-dark);
-      background: #f7fcfe;
-      text-align: center;
-    }
-    .pay-link-slot strong {
-      display: block;
-      color: var(--ink);
-      margin-bottom: 0.35rem;
-    }
-    .pay-link-slot p {
-      margin: 0;
-      font-size: 0.94rem;
-    }
-    .waitlist-message {
-      min-height: 1.4rem;
-      margin-top: 0.85rem;
-      text-align: center;
-      color: var(--accent-dark);
-      font-size: 0.92rem;
-      font-weight: 500;
-    }
-    .subcta {
-      margin-top: 0.9rem; font-size: 0.92rem; color: var(--muted); text-align: center;
-    }
-    .size-chart {
-      margin-top: 2rem;
-      grid-column: 1 / -1;
-    }
-    .size-chart h3 {
-      font-family: var(--font-display); font-size: 1.45rem; margin-bottom: 0.75rem;
-    }
-    .size-chart img {
-      width: 100%; display: block; border-radius: 14px; border: 1px solid var(--line); background: #fff;
-      max-width: 920px; margin: 0 auto;
-    }
-    .customer-love {
-      margin-top: 2rem;
-      grid-column: 1 / -1;
-    }
-    .customer-love-card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: 0 10px 30px rgba(23,49,61,0.05);
-      padding: 1rem;
-    }
-    .customer-love-card h3 {
+    .preorder-banner { padding: 1.1rem 1.2rem; background: linear-gradient(135deg, #f2f9fc 0%, #ffffff 100%); }
+    .studio-card { padding: 1.5rem; }
+    .studio-card h2, .customer-love-card h3, .newsletter-wrap h3, .size-chart h3 {
       font-family: var(--font-display);
-      font-size: 1.85rem;
+      line-height: 1.05;
       text-align: center;
-      margin-bottom: 0.45rem;
     }
-    .customer-love-card p {
-      color: var(--muted);
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto 1rem;
+    .studio-card h2 { font-size: 2.15rem; margin-bottom: 0.6rem; }
+    .studio-card p, .customer-love-card p, .newsletter-wrap p {
+      color: var(--muted); text-align: center; max-width: 760px; margin: 0 auto 1rem;
     }
-    .customer-love-card img {
-      width: 100%;
-      display: block;
-      border-radius: 14px;
-      border: 1px solid var(--line);
-      background: #fff;
-      max-width: 920px;
-      margin: 0 auto 1rem;
+    .studio-points {
+      list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; margin: 1rem 0 1.25rem;
     }
+    .studio-points li, .collection-list li {
+      padding: 0.95rem 1rem; border-radius: 14px; background: #fbfdff; border: 1px solid var(--line); color: var(--ink);
+    }
+    .studio-points li { text-align: center; }
+    .collection-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+    .collection-card {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(23,49,61,0.05); overflow: hidden; display: flex; flex-direction: column;
+    }
+    .collection-card img { width: 100%; display: block; aspect-ratio: 4 / 5; object-fit: cover; background: #fff; border-bottom: 1px solid var(--line); }
+    .collection-copy { padding: 1.25rem; display: flex; flex-direction: column; gap: 0.8rem; height: 100%; }
+    .collection-eyebrow { color: var(--accent-dark); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+    .collection-copy h3 { font-family: var(--font-display); font-size: 2rem; line-height: 1; }
+    .collection-copy p { color: var(--muted); margin: 0; }
+    .collection-list { list-style: none; display: grid; gap: 0.65rem; margin: 0.35rem 0 0.2rem; }
+    .collection-list li { font-size: 0.95rem; }
+    .collection-actions { margin-top: auto; display: grid; gap: 0.7rem; }
+    .cta {
+      display: inline-block; width: 100%; text-align: center; text-decoration: none; border: none; cursor: pointer;
+      background: var(--accent-dark); color: white; font-weight: 700; padding: 1rem 1.25rem; border-radius: 999px;
+    }
+    .cta.alt { background: var(--accent); color: var(--ink); }
+    .note { background: #f2f9fc; border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.1rem; margin: 1rem auto 0; max-width: 720px; text-align: center; }
+    .customer-love-card { padding: 1rem; }
+    .customer-love-card h3 { font-size: 1.85rem; margin-bottom: 0.45rem; }
+    .customer-love-card img, .size-chart img { width: 100%; display: block; border-radius: 14px; border: 1px solid var(--line); background: #fff; max-width: 920px; margin: 0 auto 1rem; }
+    .size-chart { padding: 1rem; }
+    .size-chart h3 { font-size: 1.45rem; margin-bottom: 0.75rem; }
+    .newsletter-wrap { padding: 1rem 1.1rem; }
+    .newsletter-wrap h3 { font-size: 1.55rem; margin-bottom: 0.45rem; }
+    .newsletter-wrap p.small { font-size: 0.88rem; margin-top: 0.75rem; }
+    .waitlist-form { display: grid; gap: 0.85rem; margin-top: 1rem; max-width: 620px; margin-left: auto; margin-right: auto; }
+    .waitlist-form input {
+      width: 100%; padding: 0.95rem 1.05rem; border-radius: 999px; border: 1.5px solid var(--line);
+      background: white; color: var(--ink); font-family: var(--font-body); font-size: 0.96rem; outline: none;
+    }
+    .waitlist-form input:focus { border-color: var(--accent-dark); box-shadow: 0 0 0 4px rgba(46,125,140,0.08); }
+    .waitlist-message { min-height: 1.4rem; margin-top: 0.85rem; text-align: center; color: var(--accent-dark); font-size: 0.92rem; font-weight: 500; }
     @media (max-width: 860px) {
-      .product-grid { grid-template-columns: 1fr; }
+      .collection-grid, .studio-points { grid-template-columns: 1fr; }
     }
     @media (max-width: 560px) {
       .hero { padding-top: 3.5rem; }
       .nav-inner { grid-template-columns: 1fr; justify-items: center; padding: 0.75rem 1rem 0.9rem; }
       .brand-logo { grid-column: 1; max-width: 360px; }
       .back { grid-column: 1; justify-self: center; display: block; margin-top: 0.5rem; text-align: center; }
-      .details-card { padding: 1.35rem; }
-      .details-card h2 { font-size: 1.9rem; }
     }
   </style>
 </head>
@@ -237,73 +149,94 @@
 
   <section class="hero">
     <div class="container">
-      <h1>Pole Mom Crewneck</h1>
-      <p class="lead">Soft, flattering, and made to celebrate the pole moms we love. Whether you're shopping for yourself or gifting someone special, this cozy crewneck brings studio pride with an easy everyday fit.</p>
+      <span class="hero-kicker">Studio Pre-Sale Collection</span>
+      <h1>Pole Prof Merch That Helps Studios Sell</h1>
+      <p class="lead">A cleaner, more professional apparel lineup built for boutique studio pre-sales — with polished product visuals, customer proof, and easy options for studios that want to offer something special to their community.</p>
     </div>
   </section>
 
   <section class="product">
     <div class="container">
       <div class="product-grid">
-        <div class="gallery-card">
-          <div class="gallery-stack">
-            <figure>
-              <img class="hero-image" src="pole-mom-1.png" alt="White and pink Pole Mom crewnecks laid out together" />
-            </figure>
-            <figure>
-              <img class="hero-image" src="pole-mom-2.jpg" alt="White Pole Mom crewneck laid flat" />
-            </figure>
-            <figure>
-              <img class="hero-image" src="pole-mom-3.png" alt="Model holding a pink Pole Mom crewneck" />
-            </figure>
-          </div>
+        <div class="preorder-banner">
+          <strong>Designed for studio pre-sales:</strong> Start with the styles that already read well on-camera and in real life, collect interest from your students, then place a more confident order.
         </div>
 
-        <div class="details-card">
-          <h2>Pole Mom Crewneck Sweatshirt</h2>
-          <p>A lightweight, giftable crewneck with soft comfort, everyday wearability, and playful studio pride.</p>
-
-          <div class="note">
-            <strong>Pricing:</strong> $43 with credit card, or $40 via email and using Venmo or CashApp.
-          </div>
-
-          <ul class="detail-list">
-            <li><strong>Available sizes:</strong> Select sizes in stock</li>
-            <li><strong>Best for:</strong> Thoughtful gifts, studio moms, and cozy everyday wear</li>
-            <li><strong>Available colors:</strong> White and Baby Pink</li>
-            <li><strong>Print detail:</strong> 3D puff print</li>
+        <div class="studio-card">
+          <h2>Invite Your Studio Into the Pre-Sale</h2>
+          <p>These pieces work best when they feel like a limited studio drop — polished visuals, easy-to-love colorways, and clear calls to claim a piece before the order closes. If you want help setting up a studio pre-sale, reach out and let’s build the right mix.</p>
+          <ul class="studio-points">
+            <li><strong>Low-pressure launch</strong><br>Collect interest before placing a larger order.</li>
+            <li><strong>Giftable + wearable</strong><br>Styles students can actually see themselves buying.</li>
+            <li><strong>Studio-ready presentation</strong><br>Professional visuals that make the pieces feel elevated.</li>
           </ul>
+          <a class="cta" href="index.html#contact">Ask About a Studio Pre-Sale</a>
+        </div>
 
-          <div class="note">
-            <strong>Ready to order?</strong>
-            <p style="margin-top:0.55rem; margin-bottom:0.85rem;">Use the secure checkout link below to purchase your Pole Mom Crewneck.</p>
-            <a class="cta" href="https://pay.poleprof.com/pole-mom-crew" target="_blank" rel="noopener">Buy the Pole Mom Crewneck</a>
-          </div>
+        <div class="collection-grid">
+          <article class="collection-card">
+            <img src="pole-mom-presale-board-retouched.png" alt="Professional Pole Mom crewneck presentation in white and baby pink" />
+            <div class="collection-copy">
+              <span class="collection-eyebrow">Pole Mom</span>
+              <h3>Pole Mom Crewneck</h3>
+              <p>The softer, cleaner presentation of this piece makes it feel more giftable, more premium, and easier to picture in a studio pre-sale.</p>
+              <ul class="collection-list">
+                <li><strong>Colors:</strong> White and baby pink</li>
+                <li><strong>Finish:</strong> 3D puff print</li>
+                <li><strong>Price:</strong> $43 card / $40 via Venmo or CashApp</li>
+              </ul>
+              <div class="collection-actions">
+                <a class="cta" href="https://pay.poleprof.com/pole-mom-crew" target="_blank" rel="noopener">Buy the Pole Mom Crewneck</a>
+                <a class="cta alt" href="index.html#contact">Use This for a Studio Pre-Sale</a>
+              </div>
+            </div>
+          </article>
 
-          <div class="newsletter-wrap">
-            <h3>Sign Up for the Newsletter</h3>
-            <p>Fill out the form below to subscribe and be the first to know when the next design drop goes live.</p>
-            <form id="waitlistForm" class="waitlist-form" action="https://formspree.io/f/april.piazza@gmail.com" method="POST">
-              <input type="hidden" name="subject" value="On Cloud Nine Newsletter Signup" />
-              <input type="email" name="email" placeholder="your@email.com" required />
-              <button type="submit" class="cta">Subscribe ☁️</button>
-            </form>
-            <p id="waitlistMessage" class="waitlist-message" aria-live="polite"></p>
-            <p class="small">For new design drop updates, follow <a href="https://www.instagram.com/pole_prof/" target="_blank" rel="noopener">@pole_prof on Instagram</a> or join the newsletter.</p>
-          </div>
+          <article class="collection-card">
+            <img src="poler-crewneck-product-board.png" alt="POLER crewneck product board in pink, sand, cream, and black" />
+            <div class="collection-copy">
+              <span class="collection-eyebrow">POLER</span>
+              <h3>POLER Crewneck</h3>
+              <p>This one reads fast and looks strong immediately — which is exactly why it works so well for studio drops, waitlists, and limited-run launches.</p>
+              <ul class="collection-list">
+                <li><strong>Colors:</strong> Pink, sand, cream, and black</li>
+                <li><strong>Hero angle:</strong> Product-first, bold lettering, easy studio identity</li>
+                <li><strong>Best use:</strong> Club merch, team pre-sales, or member-only drops</li>
+              </ul>
+              <div class="collection-actions">
+                <a class="cta" href="index.html#contact">Ask About POLER Pre-Sales</a>
+              </div>
+            </div>
+          </article>
 
+          <article class="collection-card">
+            <img src="poleprof-tee-post-board-v2.png" alt="Pole Mom and Pole Moon tees shown in a polished product board" />
+            <div class="collection-copy">
+              <span class="collection-eyebrow">Studio Tees</span>
+              <h3>Pole Mom + Pole Moon Tees</h3>
+              <p>Tighter crops and a more professional setup make the lettering pop faster, which gives these tees a better chance of converting in posts, stories, and front-desk pre-sale pushes.</p>
+              <ul class="collection-list">
+                <li><strong>Best for:</strong> Lower-price entry point merch and quick studio drops</li>
+                <li><strong>Visual strength:</strong> Cleaner lettering read and more immediate product clarity</li>
+                <li><strong>Pre-sale angle:</strong> Easy add-on piece for students who want something lighter than a crewneck</li>
+              </ul>
+              <div class="collection-actions">
+                <a class="cta" href="index.html#contact">Ask About Tee Pre-Sales</a>
+              </div>
+            </div>
+          </article>
         </div>
 
         <div class="customer-love">
           <div class="customer-love-card">
             <h3>Customer Love</h3>
-            <p>See how Pole Prof merch looks beyond the studio with real customer photos, real styling, and real love for the brand.</p>
+            <p>Real customer photos help studios sell the drop, build trust faster, and show how the merch actually looks once it leaves the rack.</p>
             <img src="customer-love-board.png" alt="Customer photos wearing and sharing Pole Prof merch" />
-            <div class="note" style="margin:0 auto; max-width: 720px; text-align:center;">
-              <strong>Ready to grab yours?</strong>
-              <p style="margin:0.55rem 0 0;">Shop available pieces now, or reach out if you want help with current sizes, colors, or upcoming drops.</p>
+            <div class="note">
+              <strong>Want to run this through your studio?</strong>
+              <p style="margin:0.55rem 0 0;">Use the contact form to ask about a custom pre-sale, current inventory, or the best pieces to lead with first.</p>
             </div>
-            <div class="note" style="margin:1rem auto 0; max-width: 720px; text-align:center;">
+            <div class="note">
               <strong>Already wearing yours?</strong>
               <p style="margin:0.55rem 0 0.85rem;">Send your review, photo, and Instagram handle through the contact form for a chance to be featured in Customer Love.</p>
               <a class="cta" href="index.html#contact">Share Your Photo &amp; Review</a>
@@ -314,6 +247,18 @@
         <div class="size-chart">
           <h3>Size Chart</h3>
           <img src="store-size-chart.png" alt="Gildan 18000 size guide for crew-neck sweatshirt" />
+        </div>
+
+        <div class="newsletter-wrap">
+          <h3>Stay in the Loop</h3>
+          <p>Join the newsletter for the next merch drop, fresh pre-sale launches, and new studio apparel releases.</p>
+          <form id="waitlistForm" class="waitlist-form" action="https://formspree.io/f/april.piazza@gmail.com" method="POST">
+            <input type="hidden" name="subject" value="On Cloud Nine Newsletter Signup" />
+            <input type="email" name="email" placeholder="your@email.com" required />
+            <button type="submit" class="cta">Subscribe ☁️</button>
+          </form>
+          <p id="waitlistMessage" class="waitlist-message" aria-live="polite"></p>
+          <p class="small">For new design drop updates, follow <a href="https://www.instagram.com/pole_prof/" target="_blank" rel="noopener">@pole_prof on Instagram</a> or join the newsletter.</p>
         </div>
       </div>
     </div>
