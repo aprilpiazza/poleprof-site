@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>On Cloud Nine Shop | Temporarily Paused</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="description" content="The On Cloud Nine shop is temporarily paused while the collection page is being refreshed." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f7fbff; --card: #fff; --ink: #17313d; --muted: #5c7785; --line: #dbe8ef;
+      --accent-dark: #2e7d8c; --font-display: 'Cormorant Garamond', serif; --font-body: 'DM Sans', sans-serif; --radius: 18px;
+    }
+    body {
+      font-family: var(--font-body);
+      background: linear-gradient(180deg,#eaf5fb 0%,var(--bg) 35%,#fff 100%);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .container { max-width: 880px; margin: 0 auto; padding: 0 1.5rem; }
+    nav { padding: 1.25rem 0 0; }
+    .brand-logo { max-width: 410px; width: 100%; display: block; margin: 0 auto; mix-blend-mode: multiply; opacity: .82; }
+    main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 2rem 0 4rem; }
+    .card {
+      width: 100%; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(23,49,61,.05); padding: 2.2rem 2rem; text-align: center;
+    }
+    h1 { font-family: var(--font-display); font-size: clamp(2.2rem,4vw,3.4rem); line-height: 1; margin-bottom: 1rem; }
+    p { color: var(--muted); max-width: 620px; margin: 0 auto 1rem; }
+    .actions { display: grid; gap: .85rem; max-width: 360px; margin: 1.5rem auto 0; }
+    .btn {
+      display: inline-block; width: 100%; text-align: center; text-decoration: none;
+      background: var(--accent-dark); color: white; font-weight: 700; padding: 1rem 1.25rem; border-radius: 999px;
+    }
+    .btn.secondary { background: white; color: var(--ink); border: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <img class="brand-logo" src="on-cloud-nine-logo.png" alt="On Cloud Nine" />
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="card">
+        <h1>Shop Temporarily Paused</h1>
+        <p>The On Cloud Nine shop is temporarily paused while the collection page is being refreshed.</p>
+        <p>Thank you for your patience. For questions about current pieces or upcoming drops, reach out below.</p>
+        <div class="actions">
+          <a class="btn" href="index.html#contact">Contact April</a>
+          <a class="btn secondary" href="https://www.instagram.com/pole_prof/" target="_blank" rel="noopener">Follow @pole_prof</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
