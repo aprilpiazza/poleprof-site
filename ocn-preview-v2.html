@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>On Cloud Nine Preview | Pole Proficiency</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="description" content="Private preview of the On Cloud Nine shop collection." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f7fbff; --card: #fff; --ink: #17313d; --muted: #5c7785; --line: #dbe8ef;
+      --accent-dark: #2e7d8c; --font-display: 'Cormorant Garamond', serif; --font-body: 'DM Sans', sans-serif; --radius: 18px;
+    }
+    body { font-family: var(--font-body); background: linear-gradient(180deg,#eaf5fb 0%,var(--bg) 35%,#fff 100%); color: var(--ink); line-height: 1.6; }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+    nav { padding: 1rem 0 0; }
+    .brand-logo { max-width: 410px; width: 100%; display: block; margin: 0 auto; mix-blend-mode: multiply; opacity: .82; }
+    .hero { padding: 1rem 0 1.5rem; text-align: center; }
+    h1 { font-family: var(--font-display); font-size: clamp(2rem,4vw,3rem); line-height: 1; margin-bottom: .6rem; }
+    .lead { max-width: 640px; margin: 0 auto; color: var(--muted); }
+    .section { padding-bottom: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
+    .card, .customer-love, .size-chart { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 10px 30px rgba(23,49,61,.05); overflow: hidden; }
+    .card img { width: 100%; display: block; aspect-ratio: 4/5; object-fit: cover; background: #fff; }
+    .card h3, .customer-love h3, .size-chart h3 { font-family: var(--font-display); font-size: 1.7rem; line-height: 1; text-align: center; }
+    .card h3 { padding: 1rem 1rem 1.1rem; }
+    .customer-love, .size-chart { padding: 1rem; margin-top: 1rem; }
+    .customer-love img { width: 100%; max-width: 920px; display: block; margin: 0 auto; border-radius: 14px; border: 1px solid var(--line); }
+    .size-chart img { width: 100%; max-width: 460px; display: block; margin: .75rem auto 0; border-radius: 14px; border: 1px solid var(--line); }
+    @media (max-width: 980px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <img class="brand-logo" src="on-cloud-nine-logo.png" alt="On Cloud Nine" />
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Studio Pre-Sale Collection</h1>
+      <p class="lead">Private preview for edits.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid">
+        <article class="card">
+          <img src="shop-tile-pole-mom.png" alt="Pole Mom crewneck preview" />
+          <h3>Pole Mom Crewneck</h3>
+        </article>
+        <article class="card">
+          <img src="shop-tile-poler.png" alt="POLER crewneck preview" />
+          <h3>POLER Crewneck</h3>
+        </article>
+        <article class="card">
+          <img src="shop-tile-tees.png" alt="Pole Mom and Pole Mama tees preview" />
+          <h3>Pole Mom + Pole Mama Tees</h3>
+        </article>
+      </div>
+
+      <div class="customer-love">
+        <h3>Customer Love</h3>
+        <img src="customer-love-board.png" alt="Customer love preview" />
+      </div>
+
+      <div class="size-chart">
+        <h3>Size Guide</h3>
+        <img src="store-size-chart.png" alt="Size guide preview" />
+      </div>
+    </div>
+  </section>
+</body>
+</html>
