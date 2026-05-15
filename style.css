@@ -83,6 +83,8 @@ a { text-decoration: none; color: inherit; }
 .btn-outline:hover { background: var(--teal); color: white; border-color: var(--teal); }
 .btn-light { background: white; color: var(--teal); border-color: white; font-weight: 700; }
 .btn-light:hover { background: var(--sky-light); transform: translateY(-2px); }
+.btn-secondary-brand { background: var(--slate); color: white; border-color: var(--slate); }
+.btn-secondary-brand:hover { background: #20373d; border-color: #20373d; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(45,74,82,0.28); }
 .btn-ghost-dark { background: transparent; color: var(--muted); border-color: var(--border); font-weight: 500; }
 .btn-ghost-dark:hover { background: var(--sky-pale); border-color: var(--teal-light); color: var(--teal); }
 .full-width { width: 100%; text-align: center; }
@@ -176,6 +178,18 @@ a { text-decoration: none; color: inherit; }
   font-size: 0.8rem; font-weight: 500; color: white;
   backdrop-filter: blur(4px);
 }
+
+/* PROMO STRIP */
+.promo-strip {
+  background: linear-gradient(180deg, #eff8fc 0%, #f8fbfd 100%);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.promo-strip-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; padding: 1rem 0; flex-wrap: wrap;
+}
+.promo-strip-copy { color: var(--slate); font-weight: 600; }
 
 /* ABOUT */
 .about { padding: 7rem 0; background: white; }
@@ -363,6 +377,8 @@ a { text-decoration: none; color: inherit; }
   .event-card { grid-template-columns: 1fr; gap: 1.5rem; }
   .event-date-block { flex-direction: row; gap: 1rem; align-items: center; width: fit-content; padding: 0.75rem 1.25rem; }
   .event-day { font-size: 2rem; }
+  .growth-grid { grid-template-columns: 1fr; }
+  .promo-strip-inner, .referral-actions { justify-content: center; }
 }
 
 /* BACHELORETTE */
@@ -400,6 +416,41 @@ a { text-decoration: none; color: inherit; }
   font-size: 0.88rem; font-weight: 500; color: white;
 }
 .bach-price { color: var(--sky); font-size: 1.15rem; margin-bottom: 2rem; }
+
+/* SEO / GROWTH LINKS */
+.growth-links { padding: 7rem 0; background: var(--sky-pale); }
+.growth-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.growth-card {
+  background: white;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  box-shadow: var(--shadow-soft);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.growth-card p { margin-bottom: 1rem; }
+.growth-card .button-row { margin-top: auto; display: flex; gap: 0.85rem; flex-wrap: wrap; }
+
+.referral-band {
+  padding: 6rem 0;
+  background: linear-gradient(145deg, rgba(13,42,54,0.94) 0%, rgba(46,125,140,0.88) 100%);
+}
+.referral-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 24px;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+.referral-card h2, .referral-card p { color: white; }
+.referral-card p { max-width: 760px; margin: 0 auto 1.35rem; color: rgba(255,255,255,0.86); }
+.referral-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
 /* VIDEO GALLERY */
 .video-gallery { padding: 7rem 0; background: var(--sky-pale); }
