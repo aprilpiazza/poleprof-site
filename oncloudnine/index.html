@@ -40,11 +40,13 @@
       background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
       box-shadow: 0 10px 30px rgba(23,49,61,.05); overflow: hidden;
     }
-    .card img { width: 100%; display: block; aspect-ratio: 4/5; object-fit: cover; background: #fff; }
-    .card-copy { padding: 1.15rem 1rem 1.25rem; text-align: center; }
+    .card { display: flex; flex-direction: column; }
+    .card img { width: 100%; display: block; aspect-ratio: 1/1; object-fit: cover; background: #fff; }
+    .card-copy { padding: 1.15rem 1rem 1.25rem; text-align: center; display: flex; flex-direction: column; flex: 1; }
     .card h3 { font-size: 1.7rem; margin-bottom: .55rem; }
     .price { font-size: 1rem; font-weight: 700; color: var(--accent); margin-bottom: .55rem; }
     .card-copy p { color: var(--muted); margin-bottom: 1rem; min-height: 3.2em; }
+    .card-actions { margin-top: auto; }
     .customer-love, .size-chart { padding: 1rem; margin-top: 1rem; }
     .customer-love h2, .size-chart h2 { font-size: 1.9rem; text-align: center; margin-bottom: .65rem; }
     .customer-love p { max-width: 720px; margin: 0.35rem auto 1rem; text-align: center; color: var(--muted); }
@@ -85,7 +87,7 @@
             <div class="price">$43 with credit card or $40 via email and using the app</div>
             <p>For pole moms and the ones who love them.</p>
             <div class="card-actions">
-              <a class="btn primary" href="../index.html#contact">Order Through April</a>
+              <a class="btn primary" href="../index.html#contact">Order Yours Now</a>
             </div>
           </div>
         </article>
@@ -96,7 +98,7 @@
             <div class="price">$43 with credit card or $40 via email and using the app</div>
             <p>Rep your journey.</p>
             <div class="card-actions">
-              <a class="btn primary" href="../index.html#contact">Order Through April</a>
+              <a class="btn primary" href="../index.html#contact">Order Yours Now</a>
             </div>
           </div>
         </article>
@@ -107,7 +109,7 @@
             <div class="price">$28 with credit card or $25 via email and using the app</div>
             <p>Layer it or let it lead.</p>
             <div class="card-actions">
-              <a class="btn primary" href="../index.html#contact">Order Through April</a>
+              <a class="btn primary" href="../index.html#contact">Order Yours Now</a>
             </div>
           </div>
         </article>
