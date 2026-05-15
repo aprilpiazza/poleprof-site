@@ -31,14 +31,26 @@
       width: 100%; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
       box-shadow: 0 10px 30px rgba(23,49,61,.05); padding: 2.2rem 2rem; text-align: center;
     }
-    h1 { font-family: var(--font-display); font-size: clamp(2.2rem,4vw,3.4rem); line-height: 1; margin-bottom: 1rem; }
+    h1, h2 { font-family: var(--font-display); line-height: 1; }
+    h1 { font-size: clamp(2.2rem,4vw,3.4rem); margin-bottom: 1rem; }
+    h2 { font-size: clamp(1.9rem,3vw,2.5rem); margin-bottom: .75rem; text-align: center; }
     p { color: var(--muted); max-width: 620px; margin: 0 auto 1rem; }
+    .stack { display: grid; gap: 1.25rem; }
     .actions { display: grid; gap: .85rem; max-width: 360px; margin: 1.5rem auto 0; }
     .btn {
       display: inline-block; width: 100%; text-align: center; text-decoration: none;
       background: var(--accent-dark); color: white; font-weight: 700; padding: 1rem 1.25rem; border-radius: 999px;
     }
     .btn.secondary { background: white; color: var(--ink); border: 1px solid var(--line); }
+    .customer-love {
+      width: 100%; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(23,49,61,.05); padding: 1.6rem 1.4rem 1.8rem; text-align: center;
+    }
+    .customer-love img {
+      width: 100%; max-width: 520px; display: block; margin: 0 auto 1rem;
+      border-radius: 14px; border: 1px solid var(--line);
+    }
+    .customer-love p { max-width: 680px; }
   </style>
 </head>
 <body>
@@ -49,14 +61,26 @@
   </nav>
   <main>
     <div class="container">
-      <div class="card">
-        <h1>Shop Temporarily Paused</h1>
-        <p>The On Cloud Nine shop is temporarily paused while the collection page is being refreshed.</p>
-        <p>Thank you for your patience. For questions about current pieces or upcoming drops, reach out below.</p>
-        <div class="actions">
-          <a class="btn" href="../index.html#contact">Contact April</a>
-          <a class="btn secondary" href="https://www.instagram.com/pole_prof/" target="_blank" rel="noopener">Follow @pole_prof</a>
+      <div class="stack">
+        <div class="card">
+          <h1>Shop Temporarily Paused</h1>
+          <p>The On Cloud Nine shop is temporarily paused while the collection page is being refreshed.</p>
+          <p>Thank you for your patience. For questions about current pieces or upcoming drops, reach out below.</p>
+          <div class="actions">
+            <a class="btn" href="../index.html#contact">Contact April</a>
+            <a class="btn secondary" href="https://www.instagram.com/pole_prof/" target="_blank" rel="noopener">Follow @pole_prof</a>
+          </div>
         </div>
+
+        <section class="customer-love" aria-label="Customer Love">
+          <h2>Customer Love</h2>
+          <p>Love seeing the collection out in the wild.</p>
+          <img src="../customer-love-board.png" alt="Customer Love collage from the On Cloud Nine collection" />
+          <p>Send your photo, review, and Instagram handle through the website form to be featured.</p>
+          <div class="actions">
+            <a class="btn" href="../index.html#contact">Be Featured</a>
+          </div>
+        </section>
       </div>
     </div>
   </main>
