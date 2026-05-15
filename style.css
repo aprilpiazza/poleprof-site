@@ -432,7 +432,6 @@ a { text-decoration: none; color: inherit; }
   height: 100%;
   border: none;
 }
-.sneak-peek-video { display: none; }
 .video-info { padding: 1.2rem 1.5rem; }
 .video-info h4 { font-family: var(--font-display); font-size: 1.15rem; color: var(--ink); margin-bottom: 0.3rem; }
 .video-info p { font-size: 0.85rem; color: var(--muted); }
