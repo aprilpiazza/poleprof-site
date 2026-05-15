@@ -43,6 +43,7 @@
     }
     .card { display: flex; flex-direction: column; }
     .card img { width: 100%; display: block; aspect-ratio: 1/1; object-fit: cover; background: #fff; }
+    .card img.equal-border { object-fit: contain; object-position: center; padding: 1.1rem; }
     .card-copy { padding: 1.15rem 1rem 1.25rem; text-align: center; display: flex; flex-direction: column; flex: 1; }
     .card h3 { font-size: 1.7rem; margin-bottom: .55rem; }
     .price { font-size: 1rem; font-weight: 700; color: var(--accent); margin-bottom: .55rem; }
@@ -93,7 +94,7 @@
           </div>
         </article>
         <article class="card">
-          <img src="preview-tile-authentically-yours.png" alt="Authentically Yours crewneck preview" />
+          <img class="equal-border" src="preview-tile-authentically-yours.png" alt="Authentically Yours crewneck preview" />
           <div class="card-copy">
             <h3>Authentically Yours Crewneck</h3>
             <div class="price">$43 with credit card or $40 via email and using the app</div>
