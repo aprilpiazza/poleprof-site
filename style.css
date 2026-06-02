@@ -362,6 +362,9 @@ a { text-decoration: none; color: inherit; }
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
+.event-image-row-single {
+  grid-template-columns: minmax(0, 22rem);
+}
 .event-promo-image {
   width: 100%;
   aspect-ratio: 1224 / 1584;
@@ -370,6 +373,9 @@ a { text-decoration: none; color: inherit; }
   border: 1.5px solid var(--border);
   box-shadow: var(--shadow-soft);
   display: block;
+}
+.event-promo-image-square {
+  aspect-ratio: 1;
 }
 
 @media (max-width: 600px) {
