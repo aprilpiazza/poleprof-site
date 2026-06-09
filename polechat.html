@@ -11,8 +11,39 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PoleChat — Answering All Your PoleFit Q's | Pole Proficiency</title>
-  <meta name="description" content="PoleChat by April at Pole Proficiency Aerial Fitness. Tips, myth-busting, guides, and support for pole fitness beginners and beyond." />
+  <title>PoleChat | Pole Technique, Performance Artistry &amp; Event Entertainment</title>
+  <meta name="description" content="PoleChat by April Piazza at Pole Proficiency Aerial Fitness: pole technique tutorials, performance artistry insights, choreography notes, and clean event entertainment education." />
+  <link rel="canonical" href="https://poleprof.com/polechat.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Pole Proficiency Aerial Fitness" />
+  <meta property="og:title" content="PoleChat | Pole Technique, Performance Artistry &amp; Event Entertainment" />
+  <meta property="og:description" content="Technique tutorials, performance artistry insights, choreography notes, and clean event entertainment education from April Piazza." />
+  <meta property="og:url" content="https://poleprof.com/polechat.html" />
+  <meta property="og:image" content="https://poleprof.com/about.jpg" />
+  <meta property="og:image:alt" content="April from Pole Proficiency" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PoleChat | Pole Technique, Performance Artistry &amp; Event Entertainment" />
+  <meta name="twitter:description" content="Technique tutorials, performance artistry insights, choreography notes, and clean event entertainment education from April Piazza." />
+  <meta name="twitter:image" content="https://poleprof.com/about.jpg" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "PoleChat",
+      "url": "https://poleprof.com/polechat.html",
+      "description": "Pole technique tutorials, performance artistry insights, choreography notes, and clean event entertainment education.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Pole Proficiency Aerial Fitness",
+        "url": "https://poleprof.com/"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "April Piazza",
+        "alternateName": "The Pole Professor"
+      }
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -26,6 +57,17 @@
       color: white;
     }
     .polechat-hero h1 { color: white; font-size: clamp(3rem, 7vw, 5rem); margin-bottom: 0.5rem; }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
     .polechat-hero p { color: rgba(255,255,255,0.75); font-size: 1.15rem; }
 
     .polechat-body { padding: 5rem 0; background: var(--off-white); }
@@ -128,10 +170,24 @@
       <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#services">Classes</a></li>
-        <li><a href="index.html#events">Events</a></li>
-        <li><a href="index.html#bachelorette">Parties</a></li>
+        <li class="nav-item has-menu">
+          <button class="nav-menu-trigger" type="button" aria-expanded="false">Services</button>
+          <div class="nav-menu">
+            <a href="index.html#services">Lessons &amp; Coaching</a>
+            <a href="mobile-pole-parties-central-fl.html">Mobile Parties</a>
+            <a href="index.html#bachelorette">Studio Parties</a>
+          </div>
+        </li>
+        <li><a href="index.html#events">Calendar</a></li>
+        <li class="nav-item has-menu">
+          <button class="nav-menu-trigger" type="button" aria-expanded="false">Media</button>
+          <div class="nav-menu">
+            <a href="index.html#videos">Videos</a>
+            <a href="index.html#gallery">Gallery</a>
+          </div>
+        </li>
         <li><a href="polechat.html" style="color:var(--teal-light)">PoleChat</a></li>
+        <li><a href="oncloudnine/">Shop</a></li>
         <li><a href="index.html#contact" class="nav-cta">Book Now</a></li>
       </ul>
     </div>
@@ -140,9 +196,9 @@
   <!-- HERO -->
   <div class="polechat-hero">
     <div class="container">
-      <p class="eyebrow light center">By April · The Pole Professor</p>
-      <h1>PoleChat 💬</h1>
-      <p>Answering all your PoleFit Q's — tips, myth-busting, guides, and support for every level.</p>
+      <p class="eyebrow light center">By April Piazza · The Pole Professor</p>
+      <h1>PoleChat</h1>
+      <p>Technique notes, choreography insight, and performance artistry for students building strength, confidence, and creative expression.</p>
     </div>
   </div>
 
@@ -160,16 +216,57 @@
             <div class="post-card-body">
               <div class="post-meta">
                 <span class="post-tag">Beginner Friendly</span>
-                <span class="post-date">March 9, 2026</span>
+                <span class="post-date">Updated June 9, 2026</span>
               </div>
               <h2 class="post-title">Who is Pole Fitness For?! Break the Myths &amp; Start Your Journey.</h2>
               <div class="post-content">
                 <p>Despite what you might think or may have heard, the short answer is: <strong>Pole fitness is for YOU!</strong></p>
                 <p>Pole fitness (also called pole dance, pole dancing, or simply...pole) is an inclusive practice enjoyed by many age groups, genders, and people all over the world. Pole was popularized as a mainstream sport and fitness practice in Australia in the late aughts and began to catch on in the States around 2012. Since then, it has gained popularity across the US, shedding stigma with each passing year.</p>
-                <p>Inherently, pole has some elements that lead to common myths. It is generally necessary to bare some skin for the sake of physics — you cannot stick to the pole otherwise! This has led to the idea that pole is for the young only, or that it is overtly sexual. The truth is that there are many different styles of pole fitness (we'll cover this topic in another post soon!). Similar to yoga or other forms of dance, your practice is what you make it — sensual, playful, sporty, whimsical, etc. All in all, pole is a dazzling blend of athleticism and artistry that challenges each individual's strength, balance, and flexibility — no matter their age!</p>
+                <p>Inherently, pole has some elements that lead to common myths. It is generally necessary to bare some skin for the sake of physics — you cannot stick to the pole otherwise! This has led to the idea that pole only belongs in one narrow category. The truth is that there are many different styles of pole fitness and performance. Similar to yoga, gymnastics, circus arts, or dance, your practice can be athletic, expressive, sporty, whimsical, theatrical, or meditative. Pole is a dazzling blend of athleticism and artistry that challenges each individual's strength, balance, and flexibility — no matter their age!</p>
                 <p>Speaking of strength, balance, and flexibility: another myth is that pole is only for those with athletic experience or those who are currently physically fit, and that couldn't be further from the truth. Most polers start in exactly the same way and their bodies adapt to the sport with time and consistent practice. Strength, balance, and flexibility are ALL things you can train!</p>
-                <p>While there are more myths to bust, this is a good place to start. In addition to being a great workout, pole fitness is also a fantastic creative — and even therapeutic! — outlet to express individuality and artistry. Not only that, but pole is FUN and an excellent way to be part of a community that offers encouragement, support, and opportunities to build friendships that can be hard to find in adulthood. So come be part of ours! Take that first step to feeling healthier, happier, and more confident. Book your first small group session, private lesson, or private party with your friends today! Find out for yourself what all the excitement is about.</p>
+                <p>While there are more myths to bust, this is a good place to start. In addition to being a great workout, pole fitness is also a fantastic creative — and even therapeutic! — outlet to express individuality and artistry. Not only that, but pole is FUN and an excellent way to be part of a community that offers encouragement, support, and opportunities to build friendships later in life. So come be part of ours! Take that first step to feeling healthier, happier, and more confident. Book your first small group session, private lesson, or private party with your friends today! Find out for yourself what all the excitement is about.</p>
                 <p class="post-signature">I can't wait to meet you,<br>Pole Prof xx</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- POST 2 -->
+          <article class="post-card">
+            <img src="about.jpg" alt="April Piazza, The Pole Professor, teaching pole technique" class="post-card-img" />
+            <div class="post-card-body">
+              <div class="post-meta">
+                <span class="post-tag">Technique</span>
+                <span class="post-date">June 9, 2026</span>
+              </div>
+              <h2 class="post-title">Three Technique Details That Make Pole Movement Look Effortless</h2>
+              <p class="post-excerpt">Clean pole choreography starts before the big trick. These small details make movement stronger, safer, and more polished.</p>
+              <div class="post-content">
+                <p>The audience may notice the final shape first, but the polish usually comes from what happens between the shapes. Technique is what makes a movement phrase look intentional instead of rushed.</p>
+                <p><strong>1. Use active shoulders.</strong> Strong shoulders are not just for advanced tricks. They protect the body, create clean lines, and help every climb, spin, and transition feel more controlled.</p>
+                <p><strong>2. Finish the pathway.</strong> A movement is not complete when you arrive at the trick. The entry and exit matter just as much. Extending through the toes, matching the music, and choosing a clean transition can turn a skill into choreography.</p>
+                <p><strong>3. Let strength and softness work together.</strong> Pole is athletic, but it should not look tense. The best movement often combines power through the grip and core with softness through the hands, face, and breath.</p>
+                <p>When I coach choreography, I look for the details that make the performer feel more confident and the audience feel more connected. That is where technique becomes artistry.</p>
+                <p class="post-signature">Practice note: film one short transition this week, then watch only the entry and exit. That is where the polish lives.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- POST 3 -->
+          <article class="post-card">
+            <img src="hero.jpg" alt="Artistic aerial pole movement and performance atmosphere" class="post-card-img" />
+            <div class="post-card-body">
+              <div class="post-meta">
+                <span class="post-tag">Performance Artistry</span>
+                <span class="post-date">June 9, 2026</span>
+              </div>
+              <h2 class="post-title">Behind the Choreography: Turning Strength Into Story</h2>
+              <p class="post-excerpt">The most memorable pole performances are not just difficult. They have a point of view.</p>
+              <div class="post-content">
+                <p>Strength gets attention. Story keeps it. When I build pole choreography, I am always asking what the audience should feel before I decide which trick belongs in the routine.</p>
+                <p>A performance can feel triumphant, reflective, playful, elegant, fierce, or cinematic. Once that emotional direction is clear, the movement choices become easier. A slow climb can create suspense. A dynamic drop can become punctuation. A held shape can give the audience a moment to breathe.</p>
+                <p>This is why choreography is more than connecting skills together. It is timing, musicality, spacing, intention, and contrast. The strongest routine is not always the one with the hardest sequence. It is the one where every movement has a reason.</p>
+                <p>For students, this means performance prep should include more than trick cleanup. We work on facial focus, transitions, pacing, confidence, and how to recover when something does not go exactly as planned.</p>
+                <p class="post-signature">Movement is strongest when it says something.</p>
               </div>
             </div>
           </article>
@@ -180,19 +277,18 @@
         <aside class="sidebar">
 
           <div class="sidebar-card sidebar-book">
-            <h4>Ready to Try It?</h4>
-            <p>Book a private lesson with April for focused, one-on-one coaching tailored to your goals.</p>
-            <a href="index.html#contact" class="btn btn-light" style="margin-top:0.5rem">Book Now →</a>
+            <h4>Book April</h4>
+            <p>Request choreography coaching, private lessons, performance prep, or mobile party availability.</p>
+            <a href="index.html#contact" class="btn btn-light" style="margin-top:0.5rem">Start an Inquiry →</a>
           </div>
 
           <div class="sidebar-card">
-            <h4>Coming Soon to PoleChat</h4>
+            <h4>Popular Topics</h4>
             <ul class="coming-soon-list">
-              <li>🎯 The Different Styles of Pole</li>
-              <li>💪 Building Strength for Pole Beginners</li>
-              <li>🩱 What to Wear to Your First Class</li>
-              <li>🤔 Is Pole Right for Me?</li>
-              <li>⭐ Student Spotlights</li>
+              <li>Performance artistry</li>
+              <li>Pole technique tutorials</li>
+              <li>Choreography cleanup</li>
+              <li>Behind-the-scenes training</li>
             </ul>
           </div>
 
@@ -214,7 +310,7 @@
         <img src="logo.png" alt="Pole Proficiency" />
         <div class="footer-logo">Pole Proficiency Aerial Fitness</div>
       </div>
-      <p class="footer-tag">Foundation to Flight · Central Florida</p>
+      <p class="footer-tag">Foundation to Flight · Pole lessons · Choreography coaching · Central Florida</p>
       <div class="footer-links">
         <a href="index.html#about">About</a>
         <a href="index.html#services">Classes</a>
@@ -227,11 +323,7 @@
     </div>
   </footer>
 
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
