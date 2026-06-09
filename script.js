@@ -155,3 +155,57 @@ window.setTimeout(() => {
   trackEvent('engaged_15_seconds');
   markLikelyHuman('engaged_15_seconds');
 }, 15000);
+
+// Mobile party package detail modal
+const tierModal = document.getElementById('mobileTierModal');
+if (tierModal) {
+  const tierModalPanel = tierModal.querySelector('.mobile-tier-modal-panel');
+  const tierModalTitle = tierModal.querySelector('#mobileTierModalTitle');
+  const tierModalIntro = tierModal.querySelector('.mobile-tier-modal-intro');
+  const tierModalList = tierModal.querySelector('.mobile-tier-modal-list');
+  const tierModalPrice = tierModal.querySelector('.mobile-tier-modal-price');
+  let lastTierTrigger = null;
+
+  const closeTierModal = () => {
+    tierModal.classList.remove('is-open');
+    tierModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('body-modal-open');
+    if (lastTierTrigger) {
+      lastTierTrigger.focus();
+    }
+  };
+
+  document.querySelectorAll('.mobile-tier-art-button').forEach((button) => {
+    button.addEventListener('click', () => {
+      const card = button.closest('.mobile-tier-card');
+      if (!card) return;
+
+      tierModalTitle.textContent = card.dataset.tierTitle || '';
+      tierModalIntro.textContent = card.dataset.tierIntro || '';
+      tierModalPrice.textContent = card.dataset.tierPrice || '';
+      tierModalList.innerHTML = '';
+
+      (card.dataset.tierItems || '').split('|').filter(Boolean).forEach((item) => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        tierModalList.appendChild(li);
+      });
+
+      lastTierTrigger = button;
+      tierModal.classList.add('is-open');
+      tierModal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('body-modal-open');
+      tierModalPanel.focus();
+    });
+  });
+
+  tierModal.querySelectorAll('[data-tier-close]').forEach((closeButton) => {
+    closeButton.addEventListener('click', closeTierModal);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && tierModal.classList.contains('is-open')) {
+      closeTierModal();
+    }
+  });
+}
