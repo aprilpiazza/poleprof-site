@@ -909,6 +909,8 @@ a { text-decoration: none; color: inherit; }
 }
 .mobile-apparatus-art {
   position: relative;
+  width: min(100%, 460px);
+  justify-self: center;
   border: 1.5px solid rgba(199, 37, 131, 0.18);
   border-radius: 20px;
   overflow: hidden;
@@ -932,6 +934,11 @@ a { text-decoration: none; color: inherit; }
 .mobile-apparatus-copy .mobile-page-chips {
   margin-top: 1.35rem;
   justify-content: flex-start;
+}
+.mobile-apparatus-copy .mobile-page-chips span {
+  border-color: rgba(42, 140, 155, 0.26);
+  color: var(--teal-dark);
+  background: rgba(255,255,255,0.74);
 }
 .mobile-apparatus-copy .mobile-parties-actions {
   margin-top: 1.8rem;
