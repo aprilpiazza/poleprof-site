@@ -2246,7 +2246,7 @@ a { text-decoration: none; color: inherit; }
     justify-content: center;
   }
   .mobile-apparatus-art {
-    max-width: 430px;
+    max-width: 330px;
     margin: 0 auto;
   }
   .mobile-package-showcase {
@@ -2262,6 +2262,8 @@ a { text-decoration: none; color: inherit; }
     padding: 2rem;
   }
   .mobile-tier-card {
+    width: min(100%, 310px);
+    justify-self: center;
     padding: 0;
   }
   .mobile-tier-art {
