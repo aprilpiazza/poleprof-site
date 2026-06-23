@@ -327,6 +327,28 @@
     </div>
   </section>
 
+  <section id="first-class-checklist" class="lead-magnet-section lead-magnet-beginner">
+    <div class="container lead-magnet-grid">
+      <div class="lead-magnet-copy">
+        <p class="eyebrow">Free Beginner Guide</p>
+        <h2>First pole class nerves? Start here.</h2>
+        <p>Thinking about booking your first lesson, but your brain has questions? Request the free First Pole Class Confidence Checklist and learn what to wear, what to bring, what to expect, and what you absolutely do not need to be good at yet.</p>
+        <ul class="lead-magnet-list">
+          <li>What to wear for grip and comfort</li>
+          <li>What happens in the first 10-15 minutes</li>
+          <li>What beginners usually learn first</li>
+          <li>What not to worry about before you arrive</li>
+        </ul>
+      </div>
+      <div class="lead-magnet-card">
+        <span class="lead-magnet-label">Free checklist</span>
+        <h3>Come as you are. We will build from there.</h3>
+        <p>Tell April what you are nervous about or what you want your first lesson to help you feel.</p>
+        <a href="#contact" class="btn btn-primary">Request the Free Checklist</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ABOUT -->
   <section id="about" class="about">
     <div class="container about-grid">
@@ -695,6 +717,8 @@
           <label for="service">I'm interested in...</label>
           <select id="service" name="service">
             <option value="">Choose a service</option>
+            <option value="first-class-checklist">Free First Pole Class Confidence Checklist</option>
+            <option value="party-planner">Free Bachelorette Pole Party Planner</option>
             <option value="mobile-party">Mobile Pole Party — at your location</option>
             <option value="performance">Stage-Ready Coaching Series — $275</option>
             <option value="private">Private Lesson — $60</option>
@@ -734,6 +758,24 @@
       <p class="footer-copy">© 2026 Pole Proficiency Aerial Fitness. All rights reserved.</p>
     </div>
   </footer>
+
+  <div class="checklist-popup" id="checklistPopup" aria-hidden="true">
+    <div class="checklist-popup-backdrop" data-checklist-close></div>
+    <div class="checklist-popup-panel" role="dialog" aria-modal="true" aria-labelledby="checklistPopupTitle" tabindex="-1">
+      <button class="checklist-popup-close" type="button" aria-label="Close free checklist popup" data-checklist-close>&times;</button>
+      <div class="checklist-popup-photo" aria-hidden="true">
+        <img src="assets/lead-magnets/first-pole-checklist-popup.jpg" alt="">
+      </div>
+      <div class="checklist-popup-copy">
+        <h2 id="checklistPopupTitle">New to Pole? Perfect.</h2>
+        <p class="checklist-popup-lede">Grab the Quick Confidence Checklist before you book. Knowing what to expect is the first foundation to flight!</p>
+        <div class="checklist-popup-actions">
+          <a href="#contact" class="btn btn-primary" data-checklist-request>Send Me the Free Checklist</a>
+          <button type="button" class="checklist-popup-skip" data-checklist-close>Let me browse first</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

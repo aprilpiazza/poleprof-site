@@ -67,6 +67,55 @@ if (form) {
   });
 }
 
+// First-class checklist popup
+const checklistPopup = document.getElementById('checklistPopup');
+if (checklistPopup) {
+  const popupPanel = checklistPopup.querySelector('.checklist-popup-panel');
+  const requestButton = checklistPopup.querySelector('[data-checklist-request]');
+  const serviceSelect = document.getElementById('service');
+  const messageField = document.getElementById('message');
+  const storageKey = 'poleprofChecklistPopupDismissed';
+  let popupTimer = null;
+
+  const openChecklistPopup = () => {
+    if (window.localStorage.getItem(storageKey) === 'true') return;
+    checklistPopup.classList.add('is-open');
+    checklistPopup.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('body-modal-open');
+    popupPanel.focus();
+  };
+
+  const closeChecklistPopup = () => {
+    checklistPopup.classList.remove('is-open');
+    checklistPopup.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('body-modal-open');
+    window.localStorage.setItem(storageKey, 'true');
+    if (popupTimer) window.clearTimeout(popupTimer);
+  };
+
+  popupTimer = window.setTimeout(openChecklistPopup, 1400);
+
+  checklistPopup.querySelectorAll('[data-checklist-close]').forEach((button) => {
+    button.addEventListener('click', closeChecklistPopup);
+  });
+
+  if (requestButton) {
+    requestButton.addEventListener('click', () => {
+      if (serviceSelect) serviceSelect.value = 'first-class-checklist';
+      if (messageField && !messageField.value.trim()) {
+        messageField.value = 'Please send me the free First Pole Class Confidence Checklist.';
+      }
+      closeChecklistPopup();
+    });
+  }
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && checklistPopup.classList.contains('is-open')) {
+      closeChecklistPopup();
+    }
+  });
+}
+
 // Mobile party package detail modal
 const tierModal = document.getElementById('mobileTierModal');
 if (tierModal) {
