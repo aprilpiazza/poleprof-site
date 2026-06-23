@@ -1199,7 +1199,14 @@ a { text-decoration: none; color: inherit; }
 }
 .mobile-kids-tier-showcase {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: center;
+  place-items: center;
+  width: min(100%, 720px);
   max-width: 720px;
+}
+.mobile-kids-tier-showcase .mobile-tier-card {
+  max-width: 340px;
+  justify-self: center;
 }
 .mobile-kids-tier-showcase .mobile-tier-art {
   aspect-ratio: 695 / 1122;
