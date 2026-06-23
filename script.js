@@ -99,13 +99,22 @@ if (checklistPopup) {
     button.addEventListener('click', closeChecklistPopup);
   });
 
+  const requestChecklist = () => {
+    if (serviceSelect) serviceSelect.value = 'first-class-checklist';
+    if (messageField) {
+      messageField.value = 'Please send me the free First Pole Class Confidence Checklist.';
+    }
+  };
+
   if (requestButton) {
-    requestButton.addEventListener('click', () => {
-      if (serviceSelect) serviceSelect.value = 'first-class-checklist';
-      if (messageField && !messageField.value.trim()) {
-        messageField.value = 'Please send me the free First Pole Class Confidence Checklist.';
-      }
+    requestButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      requestChecklist();
       closeChecklistPopup();
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.setTimeout(() => {
+        serviceSelect?.focus();
+      }, 450);
     });
   }
 
