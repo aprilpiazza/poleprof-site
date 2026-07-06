@@ -273,119 +273,57 @@ a { text-decoration: none; color: inherit; }
 .summer-series-grid {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(2rem, 5vw, 4.5rem);
-  align-items: stretch;
+  grid-template-columns: minmax(250px, 0.74fr) minmax(0, 1.26fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
 }
 .summer-series-art {
-  display: grid;
-  place-items: center;
-  background: rgba(255,255,255,0.76);
-  border: 1px solid rgba(205,227,237,0.86);
-  border-radius: var(--radius);
-  padding: clamp(1.5rem, 4vw, 3rem);
-  box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(10px);
+  justify-self: center;
 }
 .summer-series-art img {
   display: block;
-  width: min(100%, 370px);
-  max-height: 720px;
+  width: min(100%, 335px);
+  max-height: 640px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 10px;
-  border: 10px solid white;
-  box-shadow: 0 24px 70px rgba(26,46,51,0.2);
+  border-radius: 8px;
+  border: 1px solid rgba(26,46,51,0.08);
+  box-shadow: 0 18px 46px rgba(26,46,51,0.16);
+  transform: rotate(-0.6deg);
 }
 .summer-series-copy {
-  background: rgba(255,255,255,0.76);
-  border: 1px solid rgba(205,227,237,0.86);
-  border-radius: var(--radius);
-  padding: clamp(1.5rem, 4vw, 3rem);
-  box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(10px);
+  max-width: 690px;
 }
 .summer-series-copy h2 {
   color: var(--ink);
   margin-bottom: 0.4rem;
 }
-.summer-series-subtitle {
-  color: #c17029;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 1.35rem;
+.summer-series-copy .event-subtitle {
+  max-width: 42rem;
+  margin-bottom: 0.9rem;
 }
-.summer-series-copy > p {
+.summer-series-copy .event-desc {
   max-width: 44rem;
 }
-.summer-series-panel {
-  margin: 1.6rem 0;
-  padding: 1.35rem;
-  background: #111;
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 16px 36px rgba(26,46,51,0.16);
+.summer-series-meta {
+  padding-top: 0.4rem;
+  margin-bottom: 1.1rem;
 }
-.summer-series-panel h3 {
-  font-family: var(--font-body);
-  font-size: 0.86rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #f8ba96;
-  margin-bottom: 0.85rem;
+.summer-series-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
-.summer-series-panel ul {
-  display: grid;
-  gap: 0.9rem;
-  list-style: none;
-}
-.summer-series-panel li {
-  position: relative;
-  padding-left: 1.45rem;
-  color: rgba(255,255,255,0.88);
-  font-size: 0.94rem;
-  line-height: 1.65;
-}
-.summer-series-panel li::before {
+.summer-series-meta span::before {
   content: '';
-  position: absolute;
-  left: 0;
-  top: 0.7rem;
-  width: 0.55rem;
-  height: 0.55rem;
+  width: 0.45rem;
+  height: 0.45rem;
   border-radius: 50%;
-  background: #16c2bb;
+  background: var(--teal-light);
+  flex: 0 0 auto;
 }
-.summer-series-details {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-auto-rows: minmax(112px, 1fr);
-  gap: 1rem;
-  margin: 1.6rem 0;
-}
-.summer-series-details div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1rem;
-  border: 1px solid rgba(46,125,140,0.18);
-  border-radius: 10px;
-  background: rgba(244,249,253,0.86);
-}
-.summer-series-details span {
-  display: block;
-  margin-bottom: 0.35rem;
-  color: var(--teal-dark);
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-.summer-series-details p {
-  margin: 0;
-  font-size: 0.9rem;
+.summer-series-prereq {
+  margin-bottom: 1.35rem;
 }
 .summer-series-actions {
   display: flex;
@@ -2543,9 +2481,7 @@ a { text-decoration: none; color: inherit; }
   .summer-series-art img {
     width: min(100%, 330px);
     max-height: 580px;
-  }
-  .summer-series-details {
-    grid-template-columns: 1fr;
+    transform: rotate(-0.6deg);
   }
   .services-group-heading {
     display: grid;
