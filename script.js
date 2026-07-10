@@ -51,6 +51,7 @@ document.querySelectorAll('.service-card, .testimonial-card, .about-grid, .bach-
 });
 
 // Contact form submission feedback
+const contactEndpoint = 'https://poleprof-preview-clean-20260609.netlify.app/contact-receiver.html';
 const form = document.querySelector('.contact-form');
 if (form) {
   form.addEventListener('submit', async (e) => {
@@ -62,7 +63,7 @@ if (form) {
     const serviceSelect = form.querySelector('#service');
     const serviceLabel = serviceSelect?.selectedOptions?.[0]?.textContent || 'Not selected';
     const subject = formData.get('subject') || 'Pole Prof Website Inquiry';
-    const body = [
+    const emailBody = [
       'New Pole Prof website inquiry',
       '',
       `Name: ${formData.get('name') || ''}`,
@@ -72,19 +73,44 @@ if (form) {
       'Message:',
       formData.get('message') || '',
     ].join('\n');
-    const mailto = `mailto:april.piazza@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:april.piazza@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
 
-    btn.textContent = 'Opening email...';
+    btn.textContent = 'Sending...';
     btn.disabled = true;
     if (status) {
-      status.textContent = 'Your email app should open with the message filled in.';
+      status.textContent = 'Sending your message now...';
     }
 
-    window.location.href = mailto;
-    window.setTimeout(() => {
-      btn.textContent = 'Open Email Again';
+    try {
+      const submission = new URLSearchParams();
+      submission.set('form-name', 'contact');
+      submission.set('bot-field', '');
+      submission.set('name', formData.get('name') || '');
+      submission.set('email', formData.get('email') || '');
+      submission.set('service', serviceLabel);
+      submission.set('message', formData.get('message') || '');
+
+      await fetch(contactEndpoint, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: submission.toString(),
+      });
+
+      form.reset();
+      btn.textContent = 'Message Sent';
+      if (status) {
+        status.textContent = "Thank you. April will reply within 24 hours.";
+      }
+    } catch (error) {
+      btn.textContent = 'Open Email Instead';
+      if (status) {
+        status.innerHTML = `The direct send did not go through. <a href="${mailto}">Tap here to email April.</a>`;
+      }
+      window.location.href = mailto;
+    } finally {
       btn.disabled = false;
-    }, 1200);
+    }
   });
 }
 
