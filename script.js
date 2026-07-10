@@ -55,15 +55,36 @@ const form = document.querySelector('.contact-form');
 if (form) {
   form.addEventListener('submit', async (e) => {
     const btn = form.querySelector('button[type="submit"]');
-    const action = form.getAttribute('action');
-    if (action.includes('YOUR_FORM_ID') || !action.includes('@')) {
-      e.preventDefault();
-      btn.textContent = '⚠️ Form not configured yet';
-      btn.style.background = '#c4607a';
-      return;
-    }
-    btn.textContent = 'Sending...';
+    const status = form.querySelector('[data-form-status]');
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const serviceSelect = form.querySelector('#service');
+    const serviceLabel = serviceSelect?.selectedOptions?.[0]?.textContent || 'Not selected';
+    const subject = formData.get('subject') || 'Pole Prof Website Inquiry';
+    const body = [
+      'New Pole Prof website inquiry',
+      '',
+      `Name: ${formData.get('name') || ''}`,
+      `Email: ${formData.get('email') || ''}`,
+      `Interested in: ${serviceLabel}`,
+      '',
+      'Message:',
+      formData.get('message') || '',
+    ].join('\n');
+    const mailto = `mailto:april.piazza@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    btn.textContent = 'Opening email...';
     btn.disabled = true;
+    if (status) {
+      status.textContent = 'Your email app should open with the message filled in.';
+    }
+
+    window.location.href = mailto;
+    window.setTimeout(() => {
+      btn.textContent = 'Open Email Again';
+      btn.disabled = false;
+    }, 1200);
   });
 }
 
