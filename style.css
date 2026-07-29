@@ -295,7 +295,8 @@ a { text-decoration: none; color: inherit; }
 .summer-series-copy {
   max-width: 690px;
 }
-.summer-series-copy h2 {
+.summer-series-copy h2,
+.summer-series-copy h3 {
   color: var(--ink);
   margin-bottom: 0.4rem;
 }
