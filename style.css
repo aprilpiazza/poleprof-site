@@ -2714,3 +2714,13 @@ a { text-decoration: none; color: inherit; }
     grid-template-columns: 1fr;
   }
 }
+
+/* Autumn rates: full-width panel, outside the price/button flex row. */
+.lesson-autumn { grid-column: 1 / -1; background: #fcf7ee; border: 1px solid #ead9ba; border-radius: 10px; padding: 1rem 1.2rem; }
+.lesson-autumn h4 { color: #765025; font-size: .95rem; margin: 0 0 .75rem; }
+.lesson-autumn ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .65rem 2rem; }
+.lesson-autumn li { display: flex; align-items: baseline; gap: 1rem; font-size: .95rem; }
+.lesson-autumn strong { color: #244e54; font-size: 1.15rem; }
+.lesson-autumn small { font-size: .85rem; font-weight: 400; white-space: nowrap; }
+.lesson-autumn p { margin: .7rem 0 0; font-size: .82rem; color: #665b4e; }
+@media (max-width: 500px) { .lesson-autumn { padding: 1rem; } .lesson-autumn ul { display: grid; } .lesson-autumn li { justify-content: space-between; flex-wrap: wrap; gap: .25rem .75rem; } }
