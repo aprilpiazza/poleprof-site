@@ -62,19 +62,6 @@ if (form) {
     const formData = new FormData(form);
     const serviceSelect = form.querySelector('#service');
     const serviceLabel = serviceSelect?.selectedOptions?.[0]?.textContent || 'Not selected';
-    const subject = formData.get('subject') || 'Pole Prof Website Inquiry';
-    const emailBody = [
-      'New Pole Prof website inquiry',
-      '',
-      `Name: ${formData.get('name') || ''}`,
-      `Email: ${formData.get('email') || ''}`,
-      `Interested in: ${serviceLabel}`,
-      '',
-      'Message:',
-      formData.get('message') || '',
-    ].join('\n');
-    const mailto = `mailto:april.piazza@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-
     btn.textContent = 'Sending...';
     btn.disabled = true;
     if (status) {
@@ -103,11 +90,10 @@ if (form) {
         status.textContent = "Thank you. April will reply within 24 hours.";
       }
     } catch (error) {
-      btn.textContent = 'Open Email Instead';
+      btn.textContent = 'Try Again';
       if (status) {
-        status.innerHTML = `The direct send did not go through. <a href="${mailto}">Tap here to email April.</a>`;
+        status.innerHTML = 'The direct send did not go through. Please try again or <a href="https://www.instagram.com/pole_prof/" target="_blank" rel="noopener">message Pole Prof on Instagram</a>.';
       }
-      window.location.href = mailto;
     } finally {
       btn.disabled = false;
     }
