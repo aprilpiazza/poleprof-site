@@ -197,7 +197,7 @@ a { text-decoration: none; color: inherit; }
 .hero-bg::after {
   content: '';
   position: absolute; inset: 0;
-  background: url('hero.jpg') center 30%/cover no-repeat;
+  background: url('assets/beach-hero-20260930.png') center 48%/cover no-repeat;
   opacity: 0.55;
 }
 .hero-overlay {
