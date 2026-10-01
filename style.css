@@ -196,8 +196,14 @@ a { text-decoration: none; color: inherit; }
 }
 .hero-bg::after {
   content: '';
-  position: absolute; inset: 0;
-  background: url('assets/beach-hero-20260930.png') center 48%/cover no-repeat;
+  position: absolute; inset: 50% 0 auto;
+  width: min(100%, 59.2vh); aspect-ratio: 765 / 1292;
+  margin-inline: auto; transform: translateY(-50%);
+  background: url('assets/beach-hero-20260930.png') center/contain no-repeat;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent), linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent), linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
   opacity: 0.55;
 }
 .hero-overlay {
